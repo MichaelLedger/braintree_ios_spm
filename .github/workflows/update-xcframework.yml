@@ -1,0 +1,153 @@
+name: Update Braintree XCFramework
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:  # Allow manual triggering for testing
+
+jobs:
+  update-xcframework:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Download Braintree XCFramework
+        id: download-xcframework
+        run: |
+          BRAINTREE_VERSION="6.30.0"
+          BRAINTREE_URL="https://github.com/braintree/braintree_ios/releases/download/$BRAINTREE_VERSION/Braintree.xcframework.zip"
+          XCFRAMEWORK_DIR="./Frameworks"
+          
+          # Create directories if they don't exist
+          mkdir -p $XCFRAMEWORK_DIR
+          
+          # Download the XCFramework
+          curl -L $BRAINTREE_URL -o "$XCFRAMEWORK_DIR/Braintree.xcframework.zip"
+          
+          # Calculate checksum
+          if [[ "$OSTYPE" == "darwin"* ]]; then
+            CHECKSUM=$(shasum -a 256 "$XCFRAMEWORK_DIR/Braintree.xcframework.zip" | cut -d' ' -f1)
+          else
+            CHECKSUM=$(sha256sum "$XCFRAMEWORK_DIR/Braintree.xcframework.zip" | cut -d' ' -f1)
+          fi
+          
+          echo "BRAINTREE_VERSION=$BRAINTREE_VERSION" >> $GITHUB_ENV
+          echo "BRAINTREE_CHECKSUM=$CHECKSUM" >> $GITHUB_ENV
+          echo "BRAINTREE_URL=$BRAINTREE_URL" >> $GITHUB_ENV
+
+      - name: Create or Update Package.json
+        run: |
+          if [ ! -f "package.json" ]; then
+            # Create a new package.json if it doesn't exist
+            cat > package.json << EOF
+          {
+            "name": "braintree_ios_spm",
+            "version": "${{ env.BRAINTREE_VERSION }}",
+            "description": "Braintree iOS SDK Swift Package Manager distribution",
+            "repository": {
+              "type": "git",
+              "url": "git+https://github.com/yourusername/braintree_ios_spm.git"
+            },
+            "keywords": [
+              "braintree",
+              "ios",
+              "spm",
+              "xcframework"
+            ],
+            "author": "",
+            "license": "MIT",
+            "bugs": {
+              "url": "https://github.com/yourusername/braintree_ios_spm/issues"
+            },
+            "homepage": "https://github.com/yourusername/braintree_ios_spm#readme",
+            "braintree": {
+              "version": "${{ env.BRAINTREE_VERSION }}",
+              "url": "${{ env.BRAINTREE_URL }}",
+              "checksum": "${{ env.BRAINTREE_CHECKSUM }}"
+            }
+          }
+          EOF
+          else
+            # Update existing package.json with new values
+            # Using Node.js to update JSON
+            node -e "
+              const fs = require('fs');
+              const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+              
+              pkg.version = process.env.BRAINTREE_VERSION;
+              if (!pkg.braintree) pkg.braintree = {};
+              pkg.braintree.version = process.env.BRAINTREE_VERSION;
+              pkg.braintree.url = process.env.BRAINTREE_URL;
+              pkg.braintree.checksum = process.env.BRAINTREE_CHECKSUM;
+              
+              fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2));
+            "
+          fi
+
+      - name: Create Package.swift
+        run: |
+          cat > Package.swift << EOF
+          // swift-tools-version:5.3
+          import PackageDescription
+
+          let package = Package(
+              name: "BraintreeSDK",
+              products: [
+                  .library(
+                      name: "BraintreeSDK",
+                      targets: ["BraintreeSDK"]
+                  ),
+              ],
+              dependencies: [],
+              targets: [
+                  .binaryTarget(
+                      name: "BraintreeSDK",
+                      url: "${{ env.BRAINTREE_URL }}",
+                      checksum: "${{ env.BRAINTREE_CHECKSUM }}"
+                  ),
+              ]
+          )
+          EOF
+
+      - name: Update README file
+        run: |
+          if [ ! -f "README.md" ]; then
+            cat > README.md << EOF
+          # Braintree iOS SPM
+
+          Swift Package Manager distribution for Braintree iOS SDK version ${{ env.BRAINTREE_VERSION }}.
+
+          ## Installation
+
+          ```swift
+          dependencies: [
+              .package(url: "https://github.com/yourusername/braintree_ios_spm.git", from: "${{ env.BRAINTREE_VERSION }}")
+          ]
+          ```
+
+          ## Documentation
+
+          For documentation and usage instructions, see the [official Braintree documentation](https://developer.paypal.com/braintree/docs/start/hello-client/ios/v5).
+          EOF
+          else
+            # Update version in README if it exists
+            sed -i '' "s/version [0-9]\+\.[0-9]\+\.[0-9]\+/version ${{ env.BRAINTREE_VERSION }}/g" README.md
+            sed -i '' "s/from: \"[0-9]\+\.[0-9]\+\.[0-9]\+\"/from: \"${{ env.BRAINTREE_VERSION }}\"/g" README.md
+          fi
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add package.json Package.swift README.md ./Frameworks/Braintree.xcframework.zip
+          git commit -m "Update Braintree SDK to version ${{ env.BRAINTREE_VERSION }}"
+          git tag -a "v${{ env.BRAINTREE_VERSION }}" -m "Version ${{ env.BRAINTREE_VERSION }}"
+          git push origin HEAD:main --tags 
