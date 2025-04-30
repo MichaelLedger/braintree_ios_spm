@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Usage Guide
+
+This repository provides a Swift Package Manager (SPM) compatible distribution of the Braintree iOS SDK. Here's how to use it in your iOS projects:
+
+## Adding the Package Dependency
+
+### In Xcode
+
+1. In Xcode, select File → Swift Packages → Add Package Dependency
+2. Enter the repository URL
+3. Select the version you want to use (recommended: Use the "Up to Next Major" versioning rule)
+
+### In Package.swift
+
+Add the dependency to your Package.swift file:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/yourusername/braintree_ios_spm.git", from: "6.30.0")
+]
+```
+
+Then add the dependency to your target:
+
+```swift
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: [
+            .product(name: "BraintreeSDK", package: "braintree_ios_spm")
+        ]
+    )
+]
+```
+
+## Importing in Your Code
+
+```swift
+import BraintreeSDK
+```
+
+## Documentation
+
+For detailed usage instructions, refer to the [official Braintree documentation](mdc:https:/developer.paypal.com/braintree/docs/start/hello-client/ios/v5).
+
+## Verifying the Package
+
+The [Package.swift](mdc:Package.swift) file includes a SHA-256 checksum to verify the integrity of the downloaded XCFramework. This ensures you're using the exact binary published by Braintree.
