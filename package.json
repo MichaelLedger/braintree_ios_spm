@@ -1,0 +1,26 @@
+{
+  "name": "braintree_ios_spm",
+  "version": "6.30.0",
+  "description": "Braintree iOS SDK Swift Package Manager distribution",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/braintree_ios_spm.git"
+  },
+  "keywords": [
+    "braintree",
+    "ios",
+    "spm",
+    "xcframework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/braintree_ios_spm/issues"
+  },
+  "homepage": "https://github.com/yourusername/braintree_ios_spm#readme",
+  "braintree": {
+    "version": "6.30.0",
+    "url": "https://github.com/braintree/braintree_ios/releases/download/6.30.0/Braintree.xcframework.zip",
+    "checksum": "8957c69abebdec7c9a35e1bd72110775899f527d912320169cb319ee3c7971a1"
+  }
+} 

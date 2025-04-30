@@ -1,0 +1,44 @@
+name: Deploy MCP Server
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'mcp-server.js'
+      - 'server-package.json'
+      - '.github/workflows/deploy-mcp-server.yml'
+  workflow_dispatch:  # Allow manual triggering for testing
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      # Example for deploying to Heroku - replace with your preferred hosting platform
+      - name: Deploy to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          usedocker: false
+          appdir: "."
+          procfile: "web: node mcp-server.js"
+        env:
+          # Remember to set these secrets in your GitHub repository settings
+          HD_GITHUB_SECRET: ${{ secrets.GITHUB_WEBHOOK_SECRET }}
+          
+      # Alternative: Simple notification when deployment is needed
+      - name: Notify of deployment need
+        if: false  # Change to true if you're not using the automatic deployment
+        run: |
+          echo "Please deploy the MCP server manually with the following files:"
+          echo "- mcp-server.js"
+          echo "- server-package.json" 
