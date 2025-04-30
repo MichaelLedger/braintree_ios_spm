@@ -1,0 +1,45 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Manual Update Process
+
+If you need to manually update to a different Braintree iOS SDK version, follow these steps:
+
+## Using the Update Script
+
+The simplest way is to use the [update-framework.sh](mdc:update-framework.sh) script:
+
+```bash
+# Update to the default version (6.30.0)
+./update-framework.sh
+
+# Update to a specific version
+./update-framework.sh 6.31.0
+```
+
+This script:
+1. Downloads the XCFramework from the official repository
+2. Calculates the SHA-256 checksum
+3. Updates all necessary files with the new URL and checksum
+
+## Manual Steps
+
+If you prefer to update manually:
+
+1. Download the XCFramework from the official Braintree repository:
+   ```bash
+   curl -L "https://github.com/braintree/braintree_ios/releases/download/[VERSION]/Braintree.xcframework.zip" -o "Frameworks/Braintree.xcframework.zip"
+   ```
+
+2. Calculate the checksum:
+   ```bash
+   shasum -a 256 "Frameworks/Braintree.xcframework.zip"
+   ```
+
+3. Update [Package.swift](mdc:Package.swift) with the new URL and checksum
+
+4. Update [package.json](mdc:package.json) with the new version, URL, and checksum
+
+5. Commit the changes and create a new release

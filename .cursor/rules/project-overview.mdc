@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Braintree iOS SPM Project Overview
+
+This repository is a Swift Package Manager (SPM) wrapper for the Braintree iOS SDK. It automatically downloads the official Braintree iOS SDK XCFramework from the [braintree/braintree_ios](mdc:https:/github.com/braintree/braintree_ios) repository and creates an SPM-compatible package.
+
+## Key Components
+
+- [Package.swift](mdc:Package.swift) - The Swift Package Manager manifest file that defines the binary target with URL and checksum
+- [package.json](mdc:package.json) - Contains metadata about the package and the Braintree SDK version being used
+- [update-framework.sh](mdc:update-framework.sh) - Script to manually update the Braintree SDK version
+- [.github/workflows/update-xcframework.yml](mdc:.github/workflows/update-xcframework.yml) - GitHub Action that updates the package when a new release is published
+
+## Current Version
+
+The repository is currently set up to use Braintree iOS SDK version 6.30.0.

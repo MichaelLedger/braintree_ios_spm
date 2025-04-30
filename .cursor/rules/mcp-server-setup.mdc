@@ -1,0 +1,58 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# MCP Server Setup Guide
+
+The [mcp-server.js](mdc:mcp-server.js) provides a webhook endpoint that automatically updates this package when new Braintree iOS SDK versions are released.
+
+## Configuration
+
+Before deploying, configure these environment variables:
+
+- `PORT` - The port for the server to listen on (default: 3000)
+- `GITHUB_SECRET` - The webhook secret for GitHub signature verification
+- `BRAINTREE_REPO` - The repository to listen for events from (default: 'braintree/braintree_ios')
+
+## Local Testing
+
+To run the server locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Run the server
+node mcp-server.js
+```
+
+## Deployment
+
+The repository includes a GitHub Action workflow for deployment:
+
+- [deploy-mcp-server.yml](mdc:.github/workflows/deploy-mcp-server.yml)
+
+This workflow deploys the MCP server to Heroku by default, but can be modified for other platforms.
+
+### Required Secrets
+
+Set these GitHub repository secrets:
+
+- `HEROKU_API_KEY`
+- `HEROKU_APP_NAME`
+- `HEROKU_EMAIL`
+- `GITHUB_WEBHOOK_SECRET`
+
+## Setting Up the Webhook
+
+After deploying the MCP server:
+
+1. Go to the official Braintree iOS repository on GitHub
+2. Go to Settings → Webhooks → Add webhook
+3. Set the Payload URL to your MCP server endpoint (e.g., `https://your-app.herokuapp.com/webhook`)
+4. Set the Content type to `application/json`
+5. Set the Secret to the same value as your `GITHUB_SECRET` environment variable
+6. Select "Just the release event" under "Which events would you like to trigger this webhook?"
+7. Ensure "Active" is checked
+8. Click "Add webhook"
