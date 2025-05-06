@@ -1,0 +1,133 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeVenmo
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum BTVenmoLineItemKind : Swift.Int {
+  case debit
+  case credit
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class BTVenmoLineItem : ObjectiveC.NSObject {
+  @objc public var quantity: Swift.Int
+  @objc public var unitAmount: Swift.String
+  @objc public var name: Swift.String
+  @objc public var kind: BraintreeVenmo.BTVenmoLineItemKind
+  @objc public var unitTaxAmount: Swift.String?
+  @objc public var itemDescription: Swift.String?
+  @objc public var productCode: Swift.String?
+  @objc public var url: Foundation.URL?
+  @objc(initWithQuantity:unitAmount:name:kind:) public init(quantity: Swift.Int, unitAmount: Swift.String, name: Swift.String, kind: BraintreeVenmo.BTVenmoLineItemKind)
+  @objc deinit
+}
+extension BraintreeCore.BTConfiguration {
+  @_documentation(visibility: private) @objc dynamic public var isVenmoEnabled: Swift.Bool {
+    @objc get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTVenmoAccountNonce : BraintreeCore.BTPaymentMethodNonce {
+  @objc public var email: Swift.String?
+  @objc public var externalID: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var phoneNumber: Swift.String?
+  @objc public var username: Swift.String?
+  @objc public var billingAddress: BraintreeCore.BTPostalAddress?
+  @objc public var shippingAddress: BraintreeCore.BTPostalAddress?
+  @objc deinit
+}
+@objc public enum BTVenmoPaymentMethodUsage : Swift.Int {
+  case multiUse
+  case singleUse
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class BTVenmoRequest : ObjectiveC.NSObject {
+  @objc public var profileID: Swift.String?
+  @objc public var vault: Swift.Bool
+  @objc public var paymentMethodUsage: BraintreeVenmo.BTVenmoPaymentMethodUsage
+  @objc public var displayName: Swift.String?
+  @objc public var collectCustomerBillingAddress: Swift.Bool
+  @objc public var collectCustomerShippingAddress: Swift.Bool
+  @objc public var isFinalAmount: Swift.Bool
+  @objc public var subTotalAmount: Swift.String?
+  @objc public var discountAmount: Swift.String?
+  @objc public var taxAmount: Swift.String?
+  @objc public var shippingAmount: Swift.String?
+  @objc public var totalAmount: Swift.String?
+  @objc public var lineItems: [BraintreeVenmo.BTVenmoLineItem]?
+  @objc public var fallbackToWeb: Swift.Bool
+  @objc(initWithPaymentMethodUsage:) public init(paymentMethodUsage: BraintreeVenmo.BTVenmoPaymentMethodUsage)
+  @objc deinit
+}
+@objc public class BTVenmoClient : ObjectiveC.NSObject {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc(initWithAPIClient:universalLink:) convenience public init(apiClient: BraintreeCore.BTAPIClient, universalLink: Foundation.URL)
+  @objc(tokenizeWithVenmoRequest:completion:) public func tokenize(_ request: BraintreeVenmo.BTVenmoRequest, completion: @escaping (BraintreeVenmo.BTVenmoAccountNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func tokenize(_ request: BraintreeVenmo.BTVenmoRequest) async throws -> BraintreeVenmo.BTVenmoAccountNonce
+  #endif
+  @objc public func isVenmoAppInstalled() -> Swift.Bool
+  @objc public func openVenmoAppPageInAppStore()
+  @objc deinit
+}
+extension BraintreeVenmo.BTVenmoClient : BraintreeCore.BTAppContextSwitchClient {
+  @_documentation(visibility: private) @objc public static func handleReturnURL(_ url: Foundation.URL)
+  @_documentation(visibility: private) @objc public static func canHandleReturnURL(_ url: Foundation.URL) -> Swift.Bool
+}
+public enum BTVenmoAppSwitchError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case returnURLError(Swift.Int, Swift.String?)
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: BraintreeVenmo.BTVenmoAppSwitchError, b: BraintreeVenmo.BTVenmoAppSwitchError) -> Swift.Bool
+}
+public enum BTVenmoError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case disabled
+  case appNotAvailable
+  case bundleDisplayNameMissing
+  case appSwitchFailed
+  case invalidReturnURL(Swift.String)
+  case invalidBodyReturned
+  case invalidRedirectURL(Swift.String)
+  case fetchConfigurationFailed
+  case enrichedCustomerDataDisabled
+  case canceled
+  case invalidRedirectURLParameter
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: BraintreeVenmo.BTVenmoError, b: BraintreeVenmo.BTVenmoError) -> Swift.Bool
+}
+extension BraintreeVenmo.BTVenmoLineItemKind : Swift.Equatable {}
+extension BraintreeVenmo.BTVenmoLineItemKind : Swift.Hashable {}
+extension BraintreeVenmo.BTVenmoLineItemKind : Swift.RawRepresentable {}
+extension BraintreeVenmo.BTVenmoPaymentMethodUsage : Swift.Equatable {}
+extension BraintreeVenmo.BTVenmoPaymentMethodUsage : Swift.Hashable {}
+extension BraintreeVenmo.BTVenmoPaymentMethodUsage : Swift.RawRepresentable {}

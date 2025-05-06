@@ -1,0 +1,4 @@
+framework module BraintreePayPalMessaging {
+  header "BraintreePayPalMessaging-Swift.h"
+  requires objc
+}

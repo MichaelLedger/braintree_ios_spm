@@ -1,0 +1,210 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "iOS" : [
+    {
+      "identifier" : "ios-arm64",
+      "hash" : "49ba2efc754bb772a53f20d49535a83ddebfb2b34850c114a9304f2a2543dacf",
+      "container" : "BraintreeAmericanExpress.xcframework",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "name" : "BraintreeAmericanExpress"
+    },
+    {
+      "hash" : "a69f607a30c3a78da23faa120dc1567b888ff4765892210f30989569e7a14b5a",
+      "container" : "BraintreeAmericanExpress.xcframework",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreeAmericanExpress"
+    },
+    {
+      "container" : "BraintreeApplePay.xcframework",
+      "hash" : "926214e2d4ed7284c8c43316cee01ee6adb418306a5745e79aa15cb487b8bdd6",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64",
+      "name" : "BraintreeApplePay"
+    },
+    {
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreeApplePay",
+      "hash" : "9d189fbeaf3d54b0310be0bd851ef60edd85c5657cd4dd9383533087e979165f",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreeApplePay.xcframework"
+    },
+    {
+      "name" : "BraintreeCard",
+      "hash" : "b0b6f38fea4ec97795eaf837b61ca01de8d3d861cb2bf517f9e47274bfe49784",
+      "container" : "BraintreeCard.xcframework",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "container" : "BraintreeCard.xcframework",
+      "name" : "BraintreeCard",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "hash" : "fb4b059cbb94e5d1c554f6da2c4ca0155a4d32bcdc39fb8f48e890a03b29377d",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "container" : "BraintreeCore.xcframework",
+      "hash" : "45ffd0149f1c1ce43fcb98356db70a37144422b4f7813f6b8ef65f633a14b8c1",
+      "name" : "BraintreeCore",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "e18ece4ca108f1af8b47ccefe52b3f1054a13163c5f5b00461e19ffcc1ef08ec",
+      "name" : "BraintreeCore",
+      "container" : "BraintreeCore.xcframework",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "745033d7d647786d9e1f03c13a677f33faae40faba19e3d6aeab68fb0ac42bc1",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreeDataCollector.xcframework",
+      "identifier" : "ios-arm64",
+      "name" : "BraintreeDataCollector"
+    },
+    {
+      "container" : "BraintreeDataCollector.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreeDataCollector",
+      "hash" : "5fe2d34acfb3ce95a8a60c0a7f86e03b488cb5ead1927e3ac5f97e37c059453e",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+    },
+    {
+      "container" : "BraintreeLocalPayment.xcframework",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "name" : "BraintreeLocalPayment",
+      "identifier" : "ios-arm64",
+      "hash" : "594dca55d9fae72bb27aa61d56d908244724cd7b7c7422afe80598e263f4a49f"
+    },
+    {
+      "container" : "BraintreeLocalPayment.xcframework",
+      "hash" : "7b37ccb1cbe3d75c379e8af9e7a82a9fcc25e6e34dd0d8fbd88219d63feafe82",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreeLocalPayment"
+    },
+    {
+      "hash" : "273d6789213655531ee6bdb6bf323bcf00c84df896539dbebedacfbf7fa5eb70",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreePayPal.xcframework",
+      "name" : "BraintreePayPal",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreePayPal",
+      "hash" : "0c4e0c57db902c841863d078f6f5487abc3b33aec892cd287a265f3581d61482",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreePayPal.xcframework"
+    },
+    {
+      "container" : "BraintreePayPalMessaging.xcframework",
+      "identifier" : "ios-arm64",
+      "name" : "BraintreePayPalMessaging",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "hash" : "fa9f25ec4e8e613cfadfd54f50e397978a11b36bf6081d526d0102271f7125b2"
+    },
+    {
+      "hash" : "ea4fdec9e5e5156833121c5c849887d3dcdeea3b98cc972e0f3ba06fd6f68cb8",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "container" : "BraintreePayPalMessaging.xcframework",
+      "name" : "BraintreePayPalMessaging"
+    },
+    {
+      "name" : "BraintreePayPalNativeCheckout",
+      "hash" : "58aeac901d60e9a1a03fd138e460547d8a6e41d040bbda32e8ac8e736385412f",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64",
+      "container" : "BraintreePayPalNativeCheckout.xcframework"
+    },
+    {
+      "container" : "BraintreePayPalNativeCheckout.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreePayPalNativeCheckout",
+      "hash" : "e23df52e18d5df795d1498a211ac8dd94417959717588453dec7309f792a3ef4",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+    },
+    {
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64",
+      "container" : "BraintreeSEPADirectDebit.xcframework",
+      "name" : "BraintreeSEPADirectDebit",
+      "hash" : "39814c6e7a1edd99f649a7a0014ae532feaebd9a9707942cb546b7c5e53495da"
+    },
+    {
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreeSEPADirectDebit.xcframework",
+      "hash" : "e9536f519eec63c174bfe0ba81da745740d1c2c9d32a44dbcffc769f6039cee2",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "name" : "BraintreeSEPADirectDebit"
+    },
+    {
+      "name" : "BraintreeShopperInsights",
+      "hash" : "103148bbd8a27670819335ed2320cfadc9c5988c38dfce430e3dacf7749cddae",
+      "container" : "BraintreeShopperInsights.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+    },
+    {
+      "hash" : "172c1b68ed6eb8f15c760fb2f0860fd573f69f95aa29d9d08a6e79009584d436",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "name" : "BraintreeShopperInsights",
+      "container" : "BraintreeShopperInsights.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "name" : "BraintreeTestShared",
+      "container" : "BraintreeTestShared.xcframework",
+      "hash" : "c4bfc686e225f9abece8a6c38bf79028256cfa2cb9c3bf57b928d8e4664779d8",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "8e95a791a0c210761c295ffeaa02fbdf3daadbc727ca3f9336457683f334a98d",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreeTestShared.xcframework",
+      "name" : "BraintreeTestShared",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "02e724b48764cb13d6861026054edaa75a6b311cf178aaebb9ab945be35123ca",
+      "container" : "BraintreeThreeDSecure.xcframework",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "name" : "BraintreeThreeDSecure",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "b8404b54506b15430505db5cee5e21db069ffef642f4a8d4adda68e6c9d7efef",
+      "identifier" : "ios-arm64",
+      "name" : "BraintreeThreeDSecure",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "container" : "BraintreeThreeDSecure.xcframework"
+    },
+    {
+      "hash" : "f0f4506c3d289e5f4b752cb4ca02561ea6b7c4998e676ad39228ca21e91c2c32",
+      "container" : "BraintreeVenmo.xcframework",
+      "identifier" : "ios-arm64",
+      "name" : "BraintreeVenmo",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+    },
+    {
+      "hash" : "042a17ab35e023a2ec44ce4a4bec8008e9c69a69bd5a7112efb5ff9418326f72",
+      "swiftToolchainVersion" : "5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)",
+      "name" : "BraintreeVenmo",
+      "identifier" : "ios-arm64_x86_64-simulator",
+      "container" : "BraintreeVenmo.xcframework"
+    }
+  ],
+  "commitish" : "168ebd088b15475b7c47f5d1947f587ac17e793a"
+}

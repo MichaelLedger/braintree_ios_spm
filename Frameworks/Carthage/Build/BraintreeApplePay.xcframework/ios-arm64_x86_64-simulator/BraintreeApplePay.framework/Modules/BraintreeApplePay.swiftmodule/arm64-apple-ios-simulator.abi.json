@@ -1,0 +1,2639 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTApplePayAnalytics",
+        "printedName": "BTApplePayAnalytics",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paymentRequestStarted",
+            "printedName": "paymentRequestStarted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO21paymentRequestStartedSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO21paymentRequestStartedSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO21paymentRequestStartedSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO21paymentRequestStartedSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentRequestFailed",
+            "printedName": "paymentRequestFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO20paymentRequestFailedSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO20paymentRequestFailedSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO20paymentRequestFailedSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO20paymentRequestFailedSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentRequestSucceeded",
+            "printedName": "paymentRequestSucceeded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO23paymentRequestSucceededSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO23paymentRequestSucceededSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO23paymentRequestSucceededSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO23paymentRequestSucceededSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenizeStarted",
+            "printedName": "tokenizeStarted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO15tokenizeStartedSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO15tokenizeStartedSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO15tokenizeStartedSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO15tokenizeStartedSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenizeFailed",
+            "printedName": "tokenizeFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO14tokenizeFailedSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO14tokenizeFailedSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO14tokenizeFailedSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO14tokenizeFailedSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenizeSucceeded",
+            "printedName": "tokenizeSucceeded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO17tokenizeSucceededSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO17tokenizeSucceededSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO17tokenizeSucceededSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO17tokenizeSucceededSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17BraintreeApplePay07BTAppleC9AnalyticsO",
+        "mangledName": "$s17BraintreeApplePay07BTAppleC9AnalyticsO",
+        "moduleName": "BraintreeApplePay",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTApplePaymentTokensRequest",
+        "printedName": "BTApplePaymentTokensRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "applePaymentToken",
+            "printedName": "applePaymentToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplePaymentToken",
+                "printedName": "BraintreeApplePay.BTApplePaymentTokensRequest.ApplePaymentToken",
+                "usr": "s:17BraintreeApplePay27BTApplePaymentTokensRequestV0bE5Token026_9B9C35E5D3B67B2235CA00958l3DE1L0LLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay27BTApplePaymentTokensRequestV05appleE5Token026_9B9C35E5D3B67B2235CA00958m3DE1M0LLAC0beI0AELLVvp",
+            "mangledName": "$s17BraintreeApplePay27BTApplePaymentTokensRequestV05appleE5Token026_9B9C35E5D3B67B2235CA00958m3DE1M0LLAC0beI0AELLVvp",
+            "moduleName": "BraintreeApplePay",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePaymentTokensRequest",
+                "printedName": "BraintreeApplePay.BTApplePaymentTokensRequest",
+                "usr": "s:17BraintreeApplePay27BTApplePaymentTokensRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKPaymentToken",
+                "printedName": "PassKit.PKPaymentToken",
+                "usr": "c:objc(cs)PKPaymentToken"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17BraintreeApplePay27BTApplePaymentTokensRequestV5tokenACSo14PKPaymentTokenC_tcfc",
+            "mangledName": "$s17BraintreeApplePay27BTApplePaymentTokensRequestV5tokenACSo14PKPaymentTokenC_tcfc",
+            "moduleName": "BraintreeApplePay",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BraintreeApplePay27BTApplePaymentTokensRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17BraintreeApplePay27BTApplePaymentTokensRequestV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BraintreeApplePay",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17BraintreeApplePay27BTApplePaymentTokensRequestV",
+        "mangledName": "$s17BraintreeApplePay27BTApplePaymentTokensRequestV",
+        "moduleName": "BraintreeApplePay",
+        "declAttributes": [
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTApplePayError",
+        "printedName": "BTApplePayError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreeApplePay.BTApplePayError.Type) -> BraintreeApplePay.BTApplePayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTApplePayError",
+                    "printedName": "BraintreeApplePay.BTApplePayError",
+                    "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreeApplePay.BTApplePayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTApplePayError",
+                        "printedName": "BraintreeApplePay.BTApplePayError",
+                        "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO7unknownyA2CmF",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO7unknownyA2CmF",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unsupported",
+            "printedName": "unsupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreeApplePay.BTApplePayError.Type) -> BraintreeApplePay.BTApplePayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTApplePayError",
+                    "printedName": "BraintreeApplePay.BTApplePayError",
+                    "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreeApplePay.BTApplePayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTApplePayError",
+                        "printedName": "BraintreeApplePay.BTApplePayError",
+                        "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO11unsupportedyA2CmF",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO11unsupportedyA2CmF",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "noApplePayCardsReturned",
+            "printedName": "noApplePayCardsReturned",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreeApplePay.BTApplePayError.Type) -> BraintreeApplePay.BTApplePayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTApplePayError",
+                    "printedName": "BraintreeApplePay.BTApplePayError",
+                    "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreeApplePay.BTApplePayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTApplePayError",
+                        "printedName": "BraintreeApplePay.BTApplePayError",
+                        "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO02nobC13CardsReturnedyA2CmF",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO02nobC13CardsReturnedyA2CmF",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failedToCreateNonce",
+            "printedName": "failedToCreateNonce",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreeApplePay.BTApplePayError.Type) -> BraintreeApplePay.BTApplePayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTApplePayError",
+                    "printedName": "BraintreeApplePay.BTApplePayError",
+                    "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreeApplePay.BTApplePayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTApplePayError",
+                        "printedName": "BraintreeApplePay.BTApplePayError",
+                        "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO19failedToCreateNonceyA2CmF",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO19failedToCreateNonceyA2CmF",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDomain",
+            "printedName": "errorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO11errorDomainSSvpZ",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO11errorDomainSSvpZ",
+            "moduleName": "BraintreeApplePay",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO11errorDomainSSvgZ",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO11errorDomainSSvgZ",
+                "moduleName": "BraintreeApplePay",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO9errorCodeSivp",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO9errorCodeSivp",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO9errorCodeSivg",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO9errorCodeSivg",
+                "moduleName": "BraintreeApplePay",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "BraintreeApplePay",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreeApplePay.BTApplePayError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTApplePayError",
+                    "printedName": "BraintreeApplePay.BTApplePayError",
+                    "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "BraintreeApplePay",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO8rawValueSivp",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO8rawValueSivp",
+            "moduleName": "BraintreeApplePay",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO8rawValueSivg",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO8rawValueSivg",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17BraintreeApplePay07BTAppleC5ErrorO",
+        "mangledName": "$s17BraintreeApplePay07BTAppleC5ErrorO",
+        "moduleName": "BraintreeApplePay",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "BraintreeCore",
+        "printedName": "BraintreeCore",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTApplePayClient",
+        "printedName": "BTApplePayClient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiClient",
+            "printedName": "apiClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAPIClient",
+                "printedName": "BraintreeCore.BTAPIClient",
+                "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvp",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAPIClient",
+                    "printedName": "BraintreeCore.BTAPIClient",
+                    "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvg",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvg",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAPIClient",
+                    "printedName": "BraintreeCore.BTAPIClient",
+                    "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvs",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvs",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvM",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC03apiE00A4Core11BTAPIClientCvM",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiClient:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePayClient",
+                "printedName": "BraintreeApplePay.BTApplePayClient",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAPIClient",
+                "printedName": "BraintreeCore.BTAPIClient",
+                "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient(im)initWithAPIClient:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC03apiE0AC0A4Core11BTAPIClientC_tcfc",
+            "moduleName": "BraintreeApplePay",
+            "objc_name": "initWithAPIClient:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makePaymentRequest",
+            "printedName": "makePaymentRequest(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PassKit.PKPaymentRequest?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PassKit.PKPaymentRequest?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PassKit.PKPaymentRequest?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PKPaymentRequest",
+                            "printedName": "PassKit.PKPaymentRequest",
+                            "usr": "c:objc(cs)PKPaymentRequest"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient(im)makePaymentRequest:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC18makePaymentRequest10completionyySo09PKPaymentH0CSg_s5Error_pSgtc_tF",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "objc_name": "makePaymentRequest:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makePaymentRequest",
+            "printedName": "makePaymentRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKPaymentRequest",
+                "printedName": "PassKit.PKPaymentRequest",
+                "usr": "c:objc(cs)PKPaymentRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BraintreeApplePay07BTAppleC6ClientC18makePaymentRequestSo09PKPaymentH0CyYaKF",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC18makePaymentRequestSo09PKPaymentH0CyYaKF",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenize",
+            "printedName": "tokenize(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKPayment",
+                "printedName": "PassKit.PKPayment",
+                "usr": "c:objc(cs)PKPayment"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreeApplePay.BTApplePayCardNonce?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(BraintreeApplePay.BTApplePayCardNonce?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BraintreeApplePay.BTApplePayCardNonce?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BTApplePayCardNonce",
+                            "printedName": "BraintreeApplePay.BTApplePayCardNonce",
+                            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient(im)tokenizeApplePayPayment:completion:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC8tokenize_10completionySo9PKPaymentC_yAA0dC9CardNonceCSg_s5Error_pSgtctF",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "objc_name": "tokenizeApplePayPayment:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenize",
+            "printedName": "tokenize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePayCardNonce",
+                "printedName": "BraintreeApplePay.BTApplePayCardNonce",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKPayment",
+                "printedName": "PassKit.PKPayment",
+                "usr": "c:objc(cs)PKPayment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BraintreeApplePay07BTAppleC6ClientC8tokenizeyAA0dC9CardNonceCSo9PKPaymentCYaKF",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC8tokenizeyAA0dC9CardNonceCSo9PKPaymentCYaKF",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePayClient",
+                "printedName": "BraintreeApplePay.BTApplePayClient",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient(im)init",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientCACycfc",
+            "moduleName": "BraintreeApplePay",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayClient",
+        "mangledName": "$s17BraintreeApplePay07BTAppleC6ClientC",
+        "moduleName": "BraintreeApplePay",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "BraintreeCore",
+        "printedName": "BraintreeCore",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "Import",
+        "name": "BraintreeCore",
+        "printedName": "BraintreeCore",
+        "declKind": "Import",
+        "moduleName": "BraintreeApplePay"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTApplePayCardNonce",
+        "printedName": "BTApplePayCardNonce",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "binData",
+            "printedName": "binData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTBinData",
+                "printedName": "BraintreeCore.BTBinData",
+                "usr": "c:@M@BraintreeCore@objc(cs)BTBinData"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(py)binData",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC7binData0A4Core05BTBinH0Cvp",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTBinData",
+                    "printedName": "BraintreeCore.BTBinData",
+                    "usr": "c:@M@BraintreeCore@objc(cs)BTBinData"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)binData",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC7binData0A4Core05BTBinH0Cvg",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDeviceToken",
+            "printedName": "isDeviceToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(py)isDeviceToken",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC13isDeviceTokenSbvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)isDeviceToken",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC13isDeviceTokenSbvg",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)setIsDeviceToken:",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC13isDeviceTokenSbvs",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BraintreeApplePay07BTAppleC9CardNonceC13isDeviceTokenSbvM",
+                "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC13isDeviceTokenSbvM",
+                "moduleName": "BraintreeApplePay",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(json:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreeApplePay.BTApplePayCardNonce?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTApplePayCardNonce",
+                    "printedName": "BraintreeApplePay.BTApplePayCardNonce",
+                    "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTJSON",
+                "printedName": "BraintreeCore.BTJSON",
+                "usr": "c:@M@BraintreeCore@objc(cs)BTJSON"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)initWithJson:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC4jsonACSg0A4Core6BTJSONC_tcfc",
+            "moduleName": "BraintreeApplePay",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nonce:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePayCardNonce",
+                "printedName": "BraintreeApplePay.BTApplePayCardNonce",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)initWithNonce:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC5nonceACSS_tcfc",
+            "moduleName": "BraintreeApplePay",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNonce:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nonce:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePayCardNonce",
+                "printedName": "BraintreeApplePay.BTApplePayCardNonce",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)initWithNonce:type:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC5nonce4typeACSS_SStcfc",
+            "moduleName": "BraintreeApplePay",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNonce:type:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nonce:type:isDefault:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTApplePayCardNonce",
+                "printedName": "BraintreeApplePay.BTApplePayCardNonce",
+                "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce(im)initWithNonce:type:isDefault:",
+            "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC5nonce4type9isDefaultACSS_SSSbtcfc",
+            "moduleName": "BraintreeApplePay",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNonce:type:isDefault:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BraintreeApplePay@objc(cs)BTApplePayCardNonce",
+        "mangledName": "$s17BraintreeApplePay07BTAppleC9CardNonceC",
+        "moduleName": "BraintreeApplePay",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@BraintreeCore@objc(cs)BTPaymentMethodNonce",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "BraintreeCore.BTPaymentMethodNonce",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTConfiguration",
+        "printedName": "BTConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isApplePayEnabled",
+            "printedName": "isApplePayEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(py)isApplePayEnabled",
+            "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE02isdE7EnabledSbvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(im)isApplePayEnabled",
+                "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE02isdE7EnabledSbvg",
+                "moduleName": "BraintreeApplePay",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canMakeApplePayPayments",
+            "printedName": "canMakeApplePayPayments",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(py)canMakeApplePayPayments",
+            "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE07canMakedE8PaymentsSbvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(im)canMakeApplePayPayments",
+                "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE07canMakedE8PaymentsSbvg",
+                "moduleName": "BraintreeApplePay",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applePayCountryCode",
+            "printedName": "applePayCountryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(py)applePayCountryCode",
+            "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE11CountryCodeSSSgvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(im)applePayCountryCode",
+                "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE11CountryCodeSSSgvg",
+                "moduleName": "BraintreeApplePay",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applePayCurrencyCode",
+            "printedName": "applePayCurrencyCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(py)applePayCurrencyCode",
+            "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE12CurrencyCodeSSSgvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(im)applePayCurrencyCode",
+                "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE12CurrencyCodeSSSgvg",
+                "moduleName": "BraintreeApplePay",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applePayMerchantIdentifier",
+            "printedName": "applePayMerchantIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(py)applePayMerchantIdentifier",
+            "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE18MerchantIdentifierSSSgvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(im)applePayMerchantIdentifier",
+                "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE18MerchantIdentifierSSSgvg",
+                "moduleName": "BraintreeApplePay",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applePaySupportedNetworks",
+            "printedName": "applePaySupportedNetworks",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PassKit.PKPaymentNetwork]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PassKit.PKPaymentNetwork]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKPaymentNetwork",
+                        "printedName": "PassKit.PKPaymentNetwork",
+                        "usr": "c:@T@PKPaymentNetwork"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(py)applePaySupportedNetworks",
+            "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE17SupportedNetworksSaySo16PKPaymentNetworkaGSgvp",
+            "moduleName": "BraintreeApplePay",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PassKit.PKPaymentNetwork]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PassKit.PKPaymentNetwork]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PKPaymentNetwork",
+                            "printedName": "PassKit.PKPaymentNetwork",
+                            "usr": "c:@T@PKPaymentNetwork"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BraintreeApplePay@BraintreeCore@objc(cs)BTConfiguration(im)applePaySupportedNetworks",
+                "mangledName": "$s13BraintreeCore15BTConfigurationC0A8ApplePayE05appleE17SupportedNetworksSaySo16PKPaymentNetworkaGSgvg",
+                "moduleName": "BraintreeApplePay",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BraintreeCore@objc(cs)BTConfiguration",
+        "mangledName": "$s13BraintreeCore15BTConfigurationC",
+        "moduleName": "BraintreeCore",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjCMembers",
+          "Documentation",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 125,
+      "length": 35,
+      "value": "\"apple-pay:payment-request:started\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 34,
+      "value": "\"apple-pay:payment-request:failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 37,
+      "value": "\"apple-pay:payment-request:succeeded\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 28,
+      "value": "\"apple-pay:tokenize:started\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 448,
+      "length": 27,
+      "value": "\"apple-pay:tokenize:failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 30,
+      "value": "\"apple-pay:tokenize:succeeded\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 23,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 414,
+      "length": 19,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 45,
+      "value": "\"com.braintreepayments.BTApplePayErrorDomain\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "StringLiteral",
+      "offset": 703,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 161,
+      "value": "\"Apple Pay is not enabled for this merchant. Please ensure that Apple Pay is enabled in the control panel and then try saving an Apple Pay payment method again.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "StringLiteral",
+      "offset": 1061,
+      "length": 62,
+      "value": "\"No Apple Pay Card data was returned. Please contact support.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "StringLiteral",
+      "offset": 1178,
+      "length": 119,
+      "value": "\"Unable to create BTApplePayCardNonce. Either body did not contain applePayCards data or contents could not be parsed.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 23,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 414,
+      "length": 19,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 23,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 414,
+      "length": 19,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1655,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1738,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1833,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "Array",
+      "offset": 1926,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "StringLiteral",
+      "offset": 4059,
+      "length": 41,
+      "value": "\"v1\/payment_methods\/apple_payment_tokens\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "StringLiteral",
+      "offset": 4566,
+      "length": 15,
+      "value": "\"applePayCards\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4583,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayClient.swift",
+      "kind": "StringLiteral",
+      "offset": 150,
+      "length": 16,
+      "value": "\"BraintreeApplePay.BTApplePayClient\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 506,
+      "length": 10,
+      "value": "\"applePay\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 532,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 5,
+      "value": "\"off\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 855,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 10,
+      "value": "\"applePay\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1107,
+      "length": 13,
+      "value": "\"countryCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 10,
+      "value": "\"applePay\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1288,
+      "length": 14,
+      "value": "\"currencyCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1473,
+      "length": 10,
+      "value": "\"applePay\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1485,
+      "length": 20,
+      "value": "\"merchantIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1723,
+      "length": 10,
+      "value": "\"applePay\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1735,
+      "length": 19,
+      "value": "\"supportedNetworks\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "Array",
+      "offset": 1824,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 1970,
+      "length": 6,
+      "value": "\"visa\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 2122,
+      "length": 12,
+      "value": "\"mastercard\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 2286,
+      "length": 6,
+      "value": "\"amex\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 2438,
+      "length": 10,
+      "value": "\"discover\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 2598,
+      "length": 9,
+      "value": "\"maestro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTConfiguration+ApplePay.swift",
+      "kind": "StringLiteral",
+      "offset": 2756,
+      "length": 5,
+      "value": "\"elo\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 7,
+      "value": "\"nonce\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 692,
+      "length": 9,
+      "value": "\"details\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 703,
+      "length": 10,
+      "value": "\"cardType\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 14,
+      "value": "\"ApplePayCard\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 773,
+      "length": 9,
+      "value": "\"default\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 826,
+      "length": 9,
+      "value": "\"details\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 837,
+      "length": 15,
+      "value": "\"isDeviceToken\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "BooleanLiteral",
+      "offset": 866,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 911,
+      "length": 9,
+      "value": "\"binData\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 19,
+      "value": "\"BraintreeApplePay.BTApplePayCardNonce\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 19,
+      "value": "\"BraintreeApplePay.BTApplePayCardNonce\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreeApplePay\/BTApplePayCardNonce.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 19,
+      "value": "\"BraintreeApplePay.BTApplePayCardNonce\""
+    }
+  ]
+}

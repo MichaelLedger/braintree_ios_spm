@@ -1,0 +1,4 @@
+framework module BraintreeDataCollector {
+  header "BraintreeDataCollector-Swift.h"
+  requires objc
+}

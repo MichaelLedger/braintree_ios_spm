@@ -1,0 +1,75 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeSEPADirectDebit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AuthenticationServices
+import BraintreeCore
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTSEPADirectDebitNonce : BraintreeCore.BTPaymentMethodNonce {
+  @objc final public let ibanLastFour: Swift.String?
+  @objc final public let customerID: Swift.String?
+  final public let mandateType: BraintreeSEPADirectDebit.BTSEPADirectDebitMandateType?
+  @objc deinit
+}
+@objc public enum BTSEPADirectDebitMandateType : Swift.Int {
+  case oneOff
+  case recurrent
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class BTSEPADirectDebitRequest : ObjectiveC.NSObject {
+  @objc public var accountHolderName: Swift.String?
+  @objc public var iban: Swift.String?
+  @objc public var customerID: Swift.String?
+  public var mandateType: BraintreeSEPADirectDebit.BTSEPADirectDebitMandateType?
+  @objc public var billingAddress: BraintreeCore.BTPostalAddress?
+  @objc public var merchantAccountID: Swift.String?
+  @objc public var locale: Swift.String?
+  public init(accountHolderName: Swift.String? = nil, iban: Swift.String? = nil, customerID: Swift.String? = nil, mandateType: BraintreeSEPADirectDebit.BTSEPADirectDebitMandateType? = .oneOff, billingAddress: BraintreeCore.BTPostalAddress? = nil, merchantAccountID: Swift.String? = nil, locale: Swift.String? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class BTSEPADirectDebitClient : BraintreeCore.BTWebAuthenticationSessionClient {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc(tokenizeWithSEPADirectDebitRequest:completion:) public func tokenize(_ request: BraintreeSEPADirectDebit.BTSEPADirectDebitRequest, completion: @escaping (BraintreeSEPADirectDebit.BTSEPADirectDebitNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func tokenize(_ request: BraintreeSEPADirectDebit.BTSEPADirectDebitRequest) async throws -> BraintreeSEPADirectDebit.BTSEPADirectDebitNonce
+  #endif
+  @objc deinit
+}
+public enum BTSEPADirectDebitError : Swift.Int, Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case webFlowCanceled
+  case resultURLInvalid
+  case resultReturnedNil
+  case approvalURLInvalid
+  case authenticationResultNil
+  case noBodyReturned
+  case failedToCreateNonce
+  case deallocated
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension BraintreeSEPADirectDebit.BTSEPADirectDebitMandateType : Swift.Equatable {}
+extension BraintreeSEPADirectDebit.BTSEPADirectDebitMandateType : Swift.Hashable {}
+extension BraintreeSEPADirectDebit.BTSEPADirectDebitMandateType : Swift.RawRepresentable {}
+extension BraintreeSEPADirectDebit.BTSEPADirectDebitError : Swift.Hashable {}
+extension BraintreeSEPADirectDebit.BTSEPADirectDebitError : Swift.RawRepresentable {}

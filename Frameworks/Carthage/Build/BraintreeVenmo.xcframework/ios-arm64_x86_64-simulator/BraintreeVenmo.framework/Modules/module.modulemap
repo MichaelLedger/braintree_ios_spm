@@ -1,0 +1,4 @@
+framework module BraintreeVenmo {
+  header "BraintreeVenmo-Swift.h"
+  requires objc
+}

@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreePayPalNativeCheckout
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import BraintreePayPal
+import Foundation
+import PayPalCheckout
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+@objc public class BTPayPalNativeCheckoutClient : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+  @objc(initWithAPIClient:) convenience public init(apiClient: BraintreeCore.BTAPIClient)
+  @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+  @objc(tokenizeWithNativeCheckoutRequest:completion:) public func tokenize(_ request: BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutRequest, completion: @escaping (BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutAccountNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+  public func tokenize(_ request: BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutRequest) async throws -> BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutAccountNonce
+  #endif
+  @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+  @objc(tokenizeWithNativeVaultRequest:completion:) public func tokenize(_ request: BraintreePayPalNativeCheckout.BTPayPalNativeVaultRequest, completion: @escaping (BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutAccountNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+  public func tokenize(_ request: BraintreePayPalNativeCheckout.BTPayPalNativeVaultRequest) async throws -> BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutAccountNonce
+  #endif
+  @objc deinit
+}
+@objc @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+@objcMembers public class BTPayPalNativeCheckoutRequest : BraintreePayPal.BTPayPalCheckoutRequest {
+  @objc public init(amount: Swift.String, intent: BraintreePayPal.BTPayPalRequestIntent = .authorize, offerPayLater: Swift.Bool = false, currencyCode: Swift.String? = nil, requestBillingAgreement: Swift.Bool = false, billingAgreementDescription: Swift.String? = nil, userAuthenticationEmail: Swift.String? = nil)
+  @objc deinit
+}
+@available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+public enum BTPayPalNativeCheckoutError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case invalidRequest
+  case fetchConfigurationFailed
+  case payPalNotEnabled
+  case payPalClientIDNotFound
+  case invalidEnvironment
+  case orderCreationFailed(any Swift.Error)
+  case canceled
+  case checkoutSDKFailed(PayPalCheckout.ErrorInfo)
+  case tokenizationFailed(any Swift.Error)
+  case parsingTokenizationResultFailed
+  case invalidJSONResponse
+  case deallocated
+  case missingReturnURL
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (lhs: BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutError, rhs: BraintreePayPalNativeCheckout.BTPayPalNativeCheckoutError) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+@objcMembers public class BTPayPalNativeCheckoutAccountNonce : BraintreeCore.BTPaymentMethodNonce {
+  @objc final public let email: Swift.String?
+  @objc final public let firstName: Swift.String?
+  @objc final public let lastName: Swift.String?
+  @objc final public let phone: Swift.String?
+  @objc final public let billingAddress: BraintreeCore.BTPostalAddress?
+  @objc final public let shippingAddress: BraintreeCore.BTPostalAddress?
+  @objc final public let clientMetadataID: Swift.String?
+  @objc final public let payerID: Swift.String?
+  @objc deinit
+}
+@objc @available(*, deprecated, message: "BraintreePayPalNativeCheckout Module is deprecated, use BraintreePayPal Module instead")
+@objcMembers public class BTPayPalNativeVaultRequest : BraintreePayPal.BTPayPalVaultBaseRequest {
+  @objc public init(offerCredit: Swift.Bool = false, billingAgreementDescription: Swift.String? = nil)
+  @objc deinit
+}

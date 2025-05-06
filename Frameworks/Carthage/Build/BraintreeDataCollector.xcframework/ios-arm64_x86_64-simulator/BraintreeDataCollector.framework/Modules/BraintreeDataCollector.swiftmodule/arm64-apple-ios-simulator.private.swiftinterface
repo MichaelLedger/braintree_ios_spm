@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeDataCollector
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import CoreLocation
+import Foundation
+import PPRiskMagnes
+import Security
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public class BTDataCollector : ObjectiveC.NSObject {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc public func clientMetadataID(_ pairingID: Swift.String?) -> Swift.String
+  @objc public func collectDeviceData(_ completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func collectDeviceData() async throws -> Swift.String
+  #endif
+  @objc deinit
+}
+public enum BTDataCollectorError : Swift.Int, Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case jsonSerializationFailure
+  case encodingFailure
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension BraintreeDataCollector.BTDataCollectorError : Swift.Hashable {}
+extension BraintreeDataCollector.BTDataCollectorError : Swift.RawRepresentable {}

@@ -1,0 +1,4 @@
+framework module BraintreeCard {
+  header "BraintreeCard-Swift.h"
+  requires objc
+}
