@@ -1,4 +1,0 @@
-framework module BraintreePayPal {
-  header "BraintreePayPal-Swift.h"
-  requires objc
-}

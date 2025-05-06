@@ -1,4 +1,0 @@
-framework module BraintreeLocalPayment {
-  header "BraintreeLocalPayment-Swift.h"
-  requires objc
-}
