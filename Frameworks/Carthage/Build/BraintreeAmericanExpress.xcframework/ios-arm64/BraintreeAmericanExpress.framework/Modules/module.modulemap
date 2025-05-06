@@ -1,0 +1,4 @@
+framework module BraintreeAmericanExpress {
+  header "BraintreeAmericanExpress-Swift.h"
+  requires objc
+}

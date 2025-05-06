@@ -1,0 +1,104 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeCard
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @available(*, deprecated, message: "Use BTCard directly instead")
+@objcMembers public class BTCardRequest : ObjectiveC.NSObject {
+  @objc public var card: BraintreeCard.BTCard
+  @objc public init(card: BraintreeCard.BTCard)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTCardNonce : BraintreeCore.BTPaymentMethodNonce {
+  @objc public var cardNetwork: BraintreeCore.BTCardNetwork
+  @objc public var expirationMonth: Swift.String?
+  @objc public var expirationYear: Swift.String?
+  @objc public var cardholderName: Swift.String?
+  @objc public var lastTwo: Swift.String?
+  @objc public var lastFour: Swift.String?
+  @objc public var bin: Swift.String?
+  @objc public var binData: BraintreeCore.BTBinData
+  @objc public var threeDSecureInfo: BraintreeCard.BTThreeDSecureInfo
+  @objc public var authenticationInsight: BraintreeCard.BTAuthenticationInsight?
+  @_documentation(visibility: private) @objc(initWithJSON:) convenience public init(json cardJSON: BraintreeCore.BTJSON?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTCard : ObjectiveC.NSObject {
+  @objc public var number: Swift.String?
+  @objc public var expirationMonth: Swift.String?
+  @objc public var expirationYear: Swift.String?
+  @objc public var cvv: Swift.String?
+  @objc public var postalCode: Swift.String?
+  @objc public var cardholderName: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var company: Swift.String?
+  @objc public var streetAddress: Swift.String?
+  @objc public var extendedAddress: Swift.String?
+  @objc public var locality: Swift.String?
+  @objc public var region: Swift.String?
+  @objc public var countryName: Swift.String?
+  @objc public var countryCodeAlpha2: Swift.String?
+  @objc public var countryCodeAlpha3: Swift.String?
+  @objc public var countryCodeNumeric: Swift.String?
+  @objc public var shouldValidate: Swift.Bool
+  @objc public var authenticationInsightRequested: Swift.Bool
+  @objc public var merchantAccountID: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTAuthenticationInsight : ObjectiveC.NSObject {
+  @objc public var regulationEnvironment: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTThreeDSecureInfo : ObjectiveC.NSObject {
+  @objc public var acsTransactionID: Swift.String?
+  @objc public var authenticationTransactionStatus: Swift.String?
+  @objc public var authenticationTransactionStatusReason: Swift.String?
+  @objc public var cavv: Swift.String?
+  @objc public var dsTransactionID: Swift.String?
+  @objc public var eciFlag: Swift.String?
+  @objc public var enrolled: Swift.String?
+  @objc public var liabilityShifted: Swift.Bool
+  @objc public var liabilityShiftPossible: Swift.Bool
+  @objc public var lookupTransactionStatus: Swift.String?
+  @objc public var lookupTransactionStatusReason: Swift.String?
+  @objc public var paresStatus: Swift.String?
+  @objc public var status: Swift.String?
+  @objc public var threeDSecureAuthenticationID: Swift.String?
+  @objc public var threeDSecureServerTransactionID: Swift.String?
+  @objc public var threeDSecureVersion: Swift.String?
+  @objc public var wasVerified: Swift.Bool
+  @objc public var xid: Swift.String?
+  @objc deinit
+}
+public enum BTCardError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case integration
+  case customerInputInvalid([Swift.String : Any])
+  case cardAlreadyExists([Swift.String : Any])
+  case fetchConfigurationFailed
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+  public static func == (lhs: BraintreeCard.BTCardError, rhs: BraintreeCard.BTCardError) -> Swift.Bool
+}
+@objc public class BTCardClient : ObjectiveC.NSObject {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc(tokenizeCard:completion:) public func tokenize(_ card: BraintreeCard.BTCard, completion: @escaping (BraintreeCard.BTCardNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func tokenize(_ card: BraintreeCard.BTCard) async throws -> BraintreeCard.BTCardNonce
+  #endif
+  @objc deinit
+}

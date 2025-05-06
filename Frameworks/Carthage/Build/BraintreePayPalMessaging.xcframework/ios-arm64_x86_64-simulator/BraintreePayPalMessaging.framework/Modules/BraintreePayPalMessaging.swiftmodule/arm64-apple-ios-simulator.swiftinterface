@@ -1,0 +1,132 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreePayPalMessaging
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import Foundation
+import PayPalMessages
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum BTPayPalMessagingPageType {
+  case home
+  case productDetails
+  case cart
+  case miniCart
+  case checkout
+  case searchResults
+  public static func == (a: BraintreePayPalMessaging.BTPayPalMessagingPageType, b: BraintreePayPalMessaging.BTPayPalMessagingPageType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BTPayPalMessagingOfferType {
+  case payLaterShortTerm
+  case payLaterLongTerm
+  case payLaterPayInOne
+  case payPalCreditNoInterest
+  public static func == (a: BraintreePayPalMessaging.BTPayPalMessagingOfferType, b: BraintreePayPalMessaging.BTPayPalMessagingOfferType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BTPayPalMessagingView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BraintreePayPalMessaging.BTPayPalMessagingDelegate)?
+  @_Concurrency.MainActor(unsafe) public init(apiClient: BraintreeCore.BTAPIClient)
+  @_Concurrency.MainActor(unsafe) public func start(_ request: BraintreePayPalMessaging.BTPayPalMessagingRequest = BTPayPalMessagingRequest())
+  @objc deinit
+}
+extension BraintreePayPalMessaging.BTPayPalMessagingView {
+  public struct Representable : SwiftUI.UIViewRepresentable {
+    public init(apiClient: BraintreeCore.BTAPIClient, request: BraintreePayPalMessaging.BTPayPalMessagingRequest = BTPayPalMessagingRequest(), delegate: (any BraintreePayPalMessaging.BTPayPalMessagingDelegate)? = nil)
+    @_Concurrency.MainActor(unsafe) public func makeUIView(context: BraintreePayPalMessaging.BTPayPalMessagingView.Representable.Context) -> BraintreePayPalMessaging.BTPayPalMessagingView
+    @_Concurrency.MainActor(unsafe) public func updateUIView(_ view: BraintreePayPalMessaging.BTPayPalMessagingView, context: BraintreePayPalMessaging.BTPayPalMessagingView.Representable.Context)
+    public typealias Body = Swift.Never
+    public typealias Coordinator = Swift.Void
+    public typealias UIViewType = BraintreePayPalMessaging.BTPayPalMessagingView
+  }
+}
+extension BraintreePayPalMessaging.BTPayPalMessagingView : PayPalMessages.PayPalMessageViewEventDelegate, PayPalMessages.PayPalMessageViewStateDelegate {
+  @_Concurrency.MainActor(unsafe) public func onClick(_ paypalMessageView: PayPalMessages.PayPalMessageView)
+  @_Concurrency.MainActor(unsafe) public func onApply(_ paypalMessageView: PayPalMessages.PayPalMessageView)
+  @_Concurrency.MainActor(unsafe) public func onLoading(_ paypalMessageView: PayPalMessages.PayPalMessageView)
+  @_Concurrency.MainActor(unsafe) public func onSuccess(_ paypalMessageView: PayPalMessages.PayPalMessageView)
+  @_Concurrency.MainActor(unsafe) public func onError(_ paypalMessageView: PayPalMessages.PayPalMessageView, error: PayPalMessages.PayPalMessageError)
+}
+public enum BTPayPalMessagingLogoType {
+  case inline
+  case primary
+  case alternative
+  case none
+  public static func == (a: BraintreePayPalMessaging.BTPayPalMessagingLogoType, b: BraintreePayPalMessaging.BTPayPalMessagingLogoType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BTPayPalMessagingTextAlignment {
+  case left
+  case center
+  case right
+  public static func == (a: BraintreePayPalMessaging.BTPayPalMessagingTextAlignment, b: BraintreePayPalMessaging.BTPayPalMessagingTextAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol BTPayPalMessagingDelegate : AnyObject {
+  func didSelect(_ payPalMessagingView: BraintreePayPalMessaging.BTPayPalMessagingView)
+  func willApply(_ payPalMessagingView: BraintreePayPalMessaging.BTPayPalMessagingView)
+  func willAppear(_ payPalMessagingView: BraintreePayPalMessaging.BTPayPalMessagingView)
+  func didAppear(_ payPalMessagingView: BraintreePayPalMessaging.BTPayPalMessagingView)
+  func onError(_ payPalMessagingView: BraintreePayPalMessaging.BTPayPalMessagingView, error: any Swift.Error)
+}
+public struct BTPayPalMessagingRequest {
+  public init(amount: Swift.Double? = nil, pageType: BraintreePayPalMessaging.BTPayPalMessagingPageType? = nil, offerType: BraintreePayPalMessaging.BTPayPalMessagingOfferType? = nil, buyerCountry: Swift.String? = nil, logoType: BraintreePayPalMessaging.BTPayPalMessagingLogoType = .inline, textAlignment: BraintreePayPalMessaging.BTPayPalMessagingTextAlignment = .right, color: BraintreePayPalMessaging.BTPayPalMessagingColor = .black)
+}
+public enum BTPayPalMessagingError : Swift.Int, Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case fetchConfigurationFailed
+  case payPalClientIDNotFound
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BTPayPalMessagingColor {
+  case black
+  case white
+  case monochrome
+  case grayscale
+  public static func == (a: BraintreePayPalMessaging.BTPayPalMessagingColor, b: BraintreePayPalMessaging.BTPayPalMessagingColor) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BraintreePayPalMessaging.BTPayPalMessagingPageType : Swift.Equatable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingPageType : Swift.Hashable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingOfferType : Swift.Equatable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingOfferType : Swift.Hashable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingLogoType : Swift.Equatable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingLogoType : Swift.Hashable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingTextAlignment : Swift.Equatable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingTextAlignment : Swift.Hashable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingError : Swift.Hashable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingError : Swift.RawRepresentable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingColor : Swift.Equatable {}
+extension BraintreePayPalMessaging.BTPayPalMessagingColor : Swift.Hashable {}

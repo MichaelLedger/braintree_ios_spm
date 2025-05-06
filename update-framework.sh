@@ -9,29 +9,39 @@ set -e
 BRAINTREE_VERSION=${1:-"6.30.0"}
 BRAINTREE_URL="https://github.com/braintree/braintree_ios/releases/download/$BRAINTREE_VERSION/Braintree.xcframework.zip"
 XCFRAMEWORK_DIR="./Frameworks"
+TEMP_DIR="./temp"
 
 echo "Updating to Braintree SDK version $BRAINTREE_VERSION"
 
 # Create directories if they don't exist
-mkdir -p $XCFRAMEWORK_DIR
+mkdir -p $XCFRAMEWORK_DIR $TEMP_DIR
+
+# Clean existing frameworks
+rm -rf $XCFRAMEWORK_DIR/*.xcframework
 
 # Download the XCFramework
 echo "Downloading from $BRAINTREE_URL"
-curl -L $BRAINTREE_URL -o "$XCFRAMEWORK_DIR/Braintree.xcframework.zip"
+curl -L $BRAINTREE_URL -o "$TEMP_DIR/Braintree.xcframework.zip"
 
 # Calculate checksum
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  CHECKSUM=$(shasum -a 256 "$XCFRAMEWORK_DIR/Braintree.xcframework.zip" | cut -d' ' -f1)
+  CHECKSUM=$(shasum -a 256 "$TEMP_DIR/Braintree.xcframework.zip" | cut -d' ' -f1)
 else
-  CHECKSUM=$(sha256sum "$XCFRAMEWORK_DIR/Braintree.xcframework.zip" | cut -d' ' -f1)
+  CHECKSUM=$(sha256sum "$TEMP_DIR/Braintree.xcframework.zip" | cut -d' ' -f1)
 fi
 
 echo "Checksum: $CHECKSUM"
 
-# Update Package.swift
-sed -i.bak "s|url: \".*\"|url: \"$BRAINTREE_URL\"|g" Package.swift
-sed -i.bak "s|checksum: \".*\"|checksum: \"$CHECKSUM\"|g" Package.swift
-rm Package.swift.bak
+# Extract all XCFrameworks from the downloaded zip
+echo "Extracting XCFrameworks..."
+unzip -q "$TEMP_DIR/Braintree.xcframework.zip" -d "$TEMP_DIR"
+
+# Copy all XCFrameworks to the Frameworks directory
+echo "Copying XCFrameworks to $XCFRAMEWORK_DIR..."
+find "$TEMP_DIR/Carthage/Build" -name "*.xcframework" -type d -exec cp -R {} $XCFRAMEWORK_DIR/ \;
+
+# Clean up temporary files
+rm -rf $TEMP_DIR
 
 # Update package.json
 if command -v node &> /dev/null; then

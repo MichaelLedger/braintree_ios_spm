@@ -1,0 +1,326 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreePayPal
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AuthenticationServices
+import BraintreeCore
+import BraintreeDataCollector
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension BraintreeCore.BTConfiguration {
+  @_documentation(visibility: private) @objc dynamic public var isPayPalEnabled: Swift.Bool {
+    @objc get
+  }
+}
+public enum BTPayPalError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case disabled
+  case canceled
+  case fetchConfigurationFailed
+  case httpPostRequestError([Swift.String : Any])
+  case invalidURL(Swift.String)
+  case asWebAuthenticationSessionURLInvalid(Swift.String)
+  case invalidURLAction
+  case failedToCreateNonce
+  case webSessionError(any Swift.Error)
+  case deallocated
+  case appSwitchReturnURLPathInvalid
+  case appSwitchFailed
+  case missingBAToken
+  case missingPayPalRequest
+  case missingECToken
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (lhs: BraintreePayPal.BTPayPalError, rhs: BraintreePayPal.BTPayPalError) -> Swift.Bool
+}
+@objc public enum BTPayPalLineItemKind : Swift.Int {
+  case debit
+  case credit
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTPayPalLineItemUPCType : Swift.Int {
+  case none
+  case UPC_A
+  case UPC_B
+  case UPC_C
+  case UPC_D
+  case UPC_E
+  case UPC_2
+  case UPC_5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class BTPayPalLineItem : ObjectiveC.NSObject {
+  @objc final public let quantity: Swift.String
+  @objc final public let unitAmount: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let kind: BraintreePayPal.BTPayPalLineItemKind
+  @objc final public let unitTaxAmount: Swift.String?
+  @objc final public let itemDescription: Swift.String?
+  @objc final public let url: Foundation.URL?
+  @objc final public let productCode: Swift.String?
+  @objc public var imageURL: Foundation.URL?
+  @objc public var upcCode: Swift.String?
+  @objc public var upcType: BraintreePayPal.BTPayPalLineItemUPCType
+  @objc(initWithQuantity:unitAmount:name:kind:) public init(quantity: Swift.String, unitAmount: Swift.String, name: Swift.String, kind: BraintreePayPal.BTPayPalLineItemKind)
+  @objc deinit
+}
+@objc public enum BTPayPalPaymentType : Swift.Int {
+  case checkout
+  case vault
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTPayPalRequestLandingPageType : Swift.Int {
+  case none
+  case login
+  case billing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers open class BTPayPalRequest : ObjectiveC.NSObject {
+  @objc public var isShippingAddressRequired: Swift.Bool
+  @objc public var isShippingAddressEditable: Swift.Bool
+  @objc public var localeCode: BraintreePayPal.BTPayPalLocaleCode
+  @objc public var shippingAddressOverride: BraintreeCore.BTPostalAddress?
+  @objc public var landingPageType: BraintreePayPal.BTPayPalRequestLandingPageType
+  @objc public var displayName: Swift.String?
+  @objc public var merchantAccountID: Swift.String?
+  @objc public var lineItems: [BraintreePayPal.BTPayPalLineItem]?
+  @objc public var billingAgreementDescription: Swift.String?
+  @objc public var riskCorrelationID: Swift.String?
+  @objc @_documentation(visibility: private) public var hermesPath: Swift.String
+  @objc @_documentation(visibility: private) public var paymentType: BraintreePayPal.BTPayPalPaymentType
+  public var userPhoneNumber: BraintreePayPal.BTPayPalPhoneNumber?
+  @objc public var userAuthenticationEmail: Swift.String?
+  @objc public var shopperSessionID: Swift.String?
+  @objc @_documentation(visibility: private) public func parameters(with configuration: BraintreeCore.BTConfiguration, universalLink: Foundation.URL? = nil, isPayPalAppInstalled: Swift.Bool = false) -> [Swift.String : Any]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers open class BTPayPalVaultBaseRequest : BraintreePayPal.BTPayPalRequest {
+  @objc public var offerCredit: Swift.Bool
+  @objc public init(offerCredit: Swift.Bool = false, userAuthenticationEmail: Swift.String? = nil, enablePayPalAppSwitch: Swift.Bool = false)
+  @_documentation(visibility: private) @objc override public func parameters(with configuration: BraintreeCore.BTConfiguration, universalLink: Foundation.URL? = nil, isPayPalAppInstalled: Swift.Bool = false) -> [Swift.String : Any]
+  @objc deinit
+}
+@objc public enum BTPayPalRequestIntent : Swift.Int {
+  case authorize
+  case sale
+  case order
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTPayPalRequestUserAction : Swift.Int {
+  case none
+  case payNow
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers open class BTPayPalCheckoutRequest : BraintreePayPal.BTPayPalRequest {
+  @objc public var amount: Swift.String
+  @objc public var intent: BraintreePayPal.BTPayPalRequestIntent
+  @objc public var userAction: BraintreePayPal.BTPayPalRequestUserAction
+  @objc public var offerPayLater: Swift.Bool
+  @objc public var currencyCode: Swift.String?
+  @objc public var requestBillingAgreement: Swift.Bool
+  public var contactInformation: BraintreePayPal.BTContactInformation?
+  @objc public var shippingCallbackURL: Foundation.URL?
+  @objc convenience public init(userAuthenticationEmail: Swift.String, enablePayPalAppSwitch: Swift.Bool, amount: Swift.String, intent: BraintreePayPal.BTPayPalRequestIntent = .authorize, userAction: BraintreePayPal.BTPayPalRequestUserAction = .none, offerPayLater: Swift.Bool = false, currencyCode: Swift.String? = nil, requestBillingAgreement: Swift.Bool = false)
+  @objc public init(amount: Swift.String, intent: BraintreePayPal.BTPayPalRequestIntent = .authorize, userAction: BraintreePayPal.BTPayPalRequestUserAction = .none, offerPayLater: Swift.Bool = false, currencyCode: Swift.String? = nil, requestBillingAgreement: Swift.Bool = false, shippingCallbackURL: Foundation.URL? = nil, userAuthenticationEmail: Swift.String? = nil)
+  @_documentation(visibility: private) @objc override public func parameters(with configuration: BraintreeCore.BTConfiguration, universalLink: Foundation.URL? = nil, isPayPalAppInstalled: Swift.Bool = false) -> [Swift.String : Any]
+  @objc deinit
+}
+public struct BTPayPalBillingCycle {
+  public enum BillingInterval : Swift.String {
+    case day
+    case week
+    case month
+    case year
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(isTrial: Swift.Bool, numberOfExecutions: Swift.Int, interval: BraintreePayPal.BTPayPalBillingCycle.BillingInterval? = nil, intervalCount: Swift.Int? = nil, sequence: Swift.Int? = nil, startDate: Swift.String? = nil, pricing: BraintreePayPal.BTPayPalBillingPricing? = nil)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTPayPalCreditFinancingAmount : ObjectiveC.NSObject {
+  @objc final public let currency: Swift.String
+  @objc final public let value: Swift.String
+  @objc deinit
+}
+@objc public enum BTPayPalLocaleCode : Swift.Int {
+  case none
+  case da_DK
+  case de_DE
+  case en_AU
+  case en_GB
+  case en_US
+  case es_ES
+  case es_XC
+  case fr_CA
+  case fr_FR
+  case fr_XC
+  case id_ID
+  case it_IT
+  case ja_JP
+  case ko_KR
+  case nl_NL
+  case no_NO
+  case pl_PL
+  case pt_BR
+  case pt_PT
+  case ru_RU
+  case sv_SE
+  case th_TH
+  case tr_TR
+  case zh_CN
+  case zh_HK
+  case zh_TW
+  case zh_XC
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTPayPalAccountNonce : BraintreeCore.BTPaymentMethodNonce {
+  @objc final public let email: Swift.String?
+  @objc final public let firstName: Swift.String?
+  @objc final public let lastName: Swift.String?
+  @objc final public let phone: Swift.String?
+  @objc final public let billingAddress: BraintreeCore.BTPostalAddress?
+  @objc final public let shippingAddress: BraintreeCore.BTPostalAddress?
+  @objc final public let clientMetadataID: Swift.String?
+  @objc final public let payerID: Swift.String?
+  @objc final public let creditFinancing: BraintreePayPal.BTPayPalCreditFinancing?
+  @objc deinit
+}
+@objc @objcMembers public class BTPayPalVaultRequest : BraintreePayPal.BTPayPalVaultBaseRequest {
+  @objc convenience public init(userAuthenticationEmail: Swift.String, enablePayPalAppSwitch: Swift.Bool, offerCredit: Swift.Bool = false)
+  public init(offerCredit: Swift.Bool = false, recurringBillingDetails: BraintreePayPal.BTPayPalRecurringBillingDetails? = nil, recurringBillingPlanType: BraintreePayPal.BTPayPalRecurringBillingPlanType? = nil, userAuthenticationEmail: Swift.String? = nil)
+  @objc override public func parameters(with configuration: BraintreeCore.BTConfiguration, universalLink: Foundation.URL? = nil, isPayPalAppInstalled: Swift.Bool = false) -> [Swift.String : Any]
+  @objc deinit
+}
+public struct BTContactInformation {
+  public init(recipientEmail: Swift.String? = nil, recipientPhoneNumber: BraintreePayPal.BTPayPalPhoneNumber? = nil)
+}
+public struct BTPayPalPhoneNumber : Swift.Encodable {
+  public init(countryCode: Swift.String, nationalNumber: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum BTPayPalRecurringBillingPlanType : Swift.String {
+  case recurring
+  case installment
+  case unscheduled
+  case subscription
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTPayPalCreditFinancing : ObjectiveC.NSObject {
+  @objc final public let cardAmountImmutable: Swift.Bool
+  @objc final public let monthlyPayment: BraintreePayPal.BTPayPalCreditFinancingAmount?
+  @objc final public let payerAcceptance: Swift.Bool
+  @objc final public let term: Swift.Int
+  @objc final public let totalCost: BraintreePayPal.BTPayPalCreditFinancingAmount?
+  @objc final public let totalInterest: BraintreePayPal.BTPayPalCreditFinancingAmount?
+  @objc deinit
+}
+public struct BTPayPalRecurringBillingDetails {
+  public init(billingCycles: [BraintreePayPal.BTPayPalBillingCycle], currencyISOCode: Swift.String, totalAmount: Swift.String, productName: Swift.String? = nil, productDescription: Swift.String? = nil, productQuantity: Swift.Int? = nil, oneTimeFeeAmount: Swift.String? = nil, shippingAmount: Swift.String? = nil, productAmount: Swift.String? = nil, taxAmount: Swift.String? = nil)
+}
+@objc public class BTPayPalClient : BraintreeCore.BTWebAuthenticationSessionClient {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc(initWithAPIClient:universalLink:) convenience public init(apiClient: BraintreeCore.BTAPIClient, universalLink: Foundation.URL)
+  @objc(tokenizeWithVaultRequest:completion:) public func tokenize(_ request: BraintreePayPal.BTPayPalVaultRequest, completion: @escaping (BraintreePayPal.BTPayPalAccountNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func tokenize(_ request: BraintreePayPal.BTPayPalVaultRequest) async throws -> BraintreePayPal.BTPayPalAccountNonce
+  #endif
+  @objc(tokenizeWithCheckoutRequest:completion:) public func tokenize(_ request: BraintreePayPal.BTPayPalCheckoutRequest, completion: @escaping (BraintreePayPal.BTPayPalAccountNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func tokenize(_ request: BraintreePayPal.BTPayPalCheckoutRequest) async throws -> BraintreePayPal.BTPayPalAccountNonce
+  #endif
+  @objc deinit
+}
+extension BraintreePayPal.BTPayPalClient : BraintreeCore.BTAppContextSwitchClient {
+  @_documentation(visibility: private) @objc public static func handleReturnURL(_ url: Foundation.URL)
+  @_documentation(visibility: private) @objc public static func canHandleReturnURL(_ url: Foundation.URL) -> Swift.Bool
+}
+public struct BTPayPalBillingPricing {
+  public enum PricingModel : Swift.String {
+    case fixed
+    case variable
+    case autoReload
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(pricingModel: BraintreePayPal.BTPayPalBillingPricing.PricingModel, amount: Swift.String? = nil, reloadThresholdAmount: Swift.String? = nil)
+}
+extension BraintreePayPal.BTPayPalLineItemKind : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalLineItemKind : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalLineItemKind : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalLineItemUPCType : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalLineItemUPCType : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalLineItemUPCType : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalPaymentType : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalPaymentType : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalPaymentType : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalRequestLandingPageType : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalRequestLandingPageType : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalRequestLandingPageType : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalRequestIntent : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalRequestIntent : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalRequestIntent : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalRequestUserAction : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalRequestUserAction : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalRequestUserAction : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalBillingCycle.BillingInterval : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalBillingCycle.BillingInterval : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalBillingCycle.BillingInterval : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalLocaleCode : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalLocaleCode : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalLocaleCode : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalRecurringBillingPlanType : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalRecurringBillingPlanType : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalRecurringBillingPlanType : Swift.RawRepresentable {}
+extension BraintreePayPal.BTPayPalBillingPricing.PricingModel : Swift.Equatable {}
+extension BraintreePayPal.BTPayPalBillingPricing.PricingModel : Swift.Hashable {}
+extension BraintreePayPal.BTPayPalBillingPricing.PricingModel : Swift.RawRepresentable {}

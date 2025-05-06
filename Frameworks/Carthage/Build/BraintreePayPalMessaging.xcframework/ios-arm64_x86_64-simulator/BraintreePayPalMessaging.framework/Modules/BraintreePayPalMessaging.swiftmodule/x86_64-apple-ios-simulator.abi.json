@@ -1,0 +1,4336 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingPageType",
+        "printedName": "BTPayPalMessagingPageType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "home",
+            "printedName": "home",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingPageType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO4homeyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO4homeyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productDetails",
+            "printedName": "productDetails",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingPageType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO14productDetailsyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO14productDetailsyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cart",
+            "printedName": "cart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingPageType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO4cartyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO4cartyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "miniCart",
+            "printedName": "miniCart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingPageType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO8miniCartyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO8miniCartyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "checkout",
+            "printedName": "checkout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingPageType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO8checkoutyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO8checkoutyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "searchResults",
+            "printedName": "searchResults",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingPageType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO13searchResultsyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO13searchResultsyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pageTypeRawValue",
+            "printedName": "pageTypeRawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessagePageType",
+                "printedName": "PayPalMessages.PayPalMessagePageType",
+                "usr": "s:14PayPalMessages0aB15MessagePageTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO04pageG8RawValue0bC8Messages0bc7MessagefG0Ovp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO04pageG8RawValue0bC8Messages0bc7MessagefG0Ovp",
+            "moduleName": "BraintreePayPalMessaging",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalMessagePageType",
+                    "printedName": "PayPalMessages.PayPalMessagePageType",
+                    "usr": "s:14PayPalMessages0aB15MessagePageTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO04pageG8RawValue0bC8Messages0bc7MessagefG0Ovg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO04pageG8RawValue0bC8Messages0bc7MessagefG0Ovg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingPageType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingPageType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO9hashValueSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO9hashValueSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO9hashValueSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO9hashValueSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8PageTypeO",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingOfferType",
+        "printedName": "BTPayPalMessagingOfferType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "payLaterShortTerm",
+            "printedName": "payLaterShortTerm",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingOfferType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingOfferType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO17payLaterShortTermyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO17payLaterShortTermyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payLaterLongTerm",
+            "printedName": "payLaterLongTerm",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingOfferType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingOfferType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO16payLaterLongTermyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO16payLaterLongTermyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payLaterPayInOne",
+            "printedName": "payLaterPayInOne",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingOfferType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingOfferType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO08payLaterB5InOneyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO08payLaterB5InOneyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payPalCreditNoInterest",
+            "printedName": "payPalCreditNoInterest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingOfferType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingOfferType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO03payC16CreditNoInterestyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO03payC16CreditNoInterestyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offerTypeRawValue",
+            "printedName": "offerTypeRawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageOfferType",
+                "printedName": "PayPalMessages.PayPalMessageOfferType",
+                "usr": "s:14PayPalMessages0aB16MessageOfferTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO05offerG8RawValue0bC8Messages0bc7MessagefG0Ovp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO05offerG8RawValue0bC8Messages0bc7MessagefG0Ovp",
+            "moduleName": "BraintreePayPalMessaging",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalMessageOfferType",
+                    "printedName": "PayPalMessages.PayPalMessageOfferType",
+                    "usr": "s:14PayPalMessages0aB16MessageOfferTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO05offerG8RawValue0bC8Messages0bc7MessagefG0Ovg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO05offerG8RawValue0bC8Messages0bc7MessagefG0Ovg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingOfferType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingOfferType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO9hashValueSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO9hashValueSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO9hashValueSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO9hashValueSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9OfferTypeO",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "BraintreeCore",
+        "printedName": "BraintreeCore",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingView",
+        "printedName": "BTPayPalMessagingView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingDelegate",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingDelegate",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC8delegateAA0ecD8Delegate_pSgvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "messageView",
+            "printedName": "messageView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayPalMessages.PayPalMessageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalMessageView",
+                    "printedName": "PayPalMessages.PayPalMessageView",
+                    "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayPalMessages.PayPalMessageView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalMessageView",
+                        "printedName": "PayPalMessages.PayPalMessageView",
+                        "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayPalMessages.PayPalMessageView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalMessageView",
+                        "printedName": "PayPalMessages.PayPalMessageView",
+                        "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC07messageF00bC8Messages0bc7MessageF0CSgvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiClient",
+            "printedName": "apiClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAPIClient",
+                "printedName": "BraintreeCore.BTAPIClient",
+                "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAPIClient",
+                    "printedName": "BraintreeCore.BTAPIClient",
+                    "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAPIClient",
+                    "printedName": "BraintreeCore.BTAPIClient",
+                    "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9apiClient0A4Core11BTAPIClientCvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiClient:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAPIClient",
+                "printedName": "BraintreeCore.BTAPIClient",
+                "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9apiClientAC0A4Core11BTAPIClientC_tcfc",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9apiClientAC0A4Core11BTAPIClientC_tcfc",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingView",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                    "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView(im)initWithCoder:",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "BraintreePayPalMessaging",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingRequest",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingRequest",
+                "hasDefaultArg": true,
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC5startyyAA0ecD7RequestVF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC5startyyAA0ecD7RequestVF",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView(im)initWithFrame:",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "BraintreePayPalMessaging",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Representable",
+            "printedName": "Representable",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(apiClient:request:delegate:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Representable",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView.Representable",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAPIClient",
+                    "printedName": "BraintreeCore.BTAPIClient",
+                    "usr": "c:@M@BraintreeCore@objc(cs)BTAPIClient"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingRequest",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingRequest",
+                    "hasDefaultArg": true,
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingDelegate",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingDelegate",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV9apiClient7request8delegateAE0A4Core11BTAPIClientC_AA0ecD7RequestVAA0ecD8Delegate_pSgtcfc",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV9apiClient7request8delegateAE0A4Core11BTAPIClientC_AA0ecD7RequestVAA0ecD8Delegate_pSgtcfc",
+                "moduleName": "BraintreePayPalMessaging",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "makeUIView",
+                "printedName": "makeUIView(context:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingView",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                    "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewRepresentableContext",
+                    "printedName": "SwiftUI.UIViewRepresentableContext<BraintreePayPalMessaging.BTPayPalMessagingView.Representable>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Representable",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView.Representable",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV10makeUIView7contextAC7SwiftUI0iG7ContextVyAEG_tF",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV10makeUIView7contextAC7SwiftUI0iG7ContextVyAEG_tF",
+                "moduleName": "BraintreePayPalMessaging",
+                "declAttributes": [
+                  "Custom",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "updateUIView",
+                "printedName": "updateUIView(_:context:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingView",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                    "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewRepresentableContext",
+                    "printedName": "SwiftUI.UIViewRepresentableContext<BraintreePayPalMessaging.BTPayPalMessagingView.Representable>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Representable",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView.Representable",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV12updateUIView_7contextyAC_7SwiftUI0iG7ContextVyAEGtF",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV12updateUIView_7contextyAC_7SwiftUI0iG7ContextVyAEGtF",
+                "moduleName": "BraintreePayPalMessaging",
+                "declAttributes": [
+                  "Custom",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC13RepresentableV",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "UIViewRepresentable",
+                "printedName": "UIViewRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "UIViewType",
+                    "printedName": "UIViewType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingView",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                        "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeWitness",
+                    "name": "Coordinator",
+                    "printedName": "Coordinator",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:7SwiftUI19UIViewRepresentableP",
+                "mangledName": "$s7SwiftUI19UIViewRepresentableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "View",
+                "printedName": "View",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "Body",
+                    "printedName": "Body",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:7SwiftUI4ViewP",
+                "mangledName": "$s7SwiftUI4ViewP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "onClick",
+            "printedName": "onClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageView",
+                "printedName": "PayPalMessages.PayPalMessageView",
+                "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC7onClickyy0bC8Messages0bc7MessageF0CF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC7onClickyy0bC8Messages0bc7MessageF0CF",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onApply",
+            "printedName": "onApply(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageView",
+                "printedName": "PayPalMessages.PayPalMessageView",
+                "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC7onApplyyy0bC8Messages0bc7MessageF0CF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC7onApplyyy0bC8Messages0bc7MessageF0CF",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoading",
+            "printedName": "onLoading(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageView",
+                "printedName": "PayPalMessages.PayPalMessageView",
+                "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9onLoadingyy0bC8Messages0bc7MessageF0CF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9onLoadingyy0bC8Messages0bc7MessageF0CF",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageView",
+                "printedName": "PayPalMessages.PayPalMessageView",
+                "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC9onSuccessyy0bC8Messages0bc7MessageF0CF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC9onSuccessyy0bC8Messages0bc7MessageF0CF",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageView",
+                "printedName": "PayPalMessages.PayPalMessageView",
+                "usr": "c:@M@PayPalMessages@objc(cs)PayPalMessageView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageError",
+                "printedName": "PayPalMessages.PayPalMessageError",
+                "usr": "s:14PayPalMessages0aB12MessageErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD4ViewC7onError_5errory0bC8Messages0bc7MessageF0C_AF0bckH0OtF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC7onError_5errory0bC8Messages0bc7MessageF0C_AF0bckH0OtF",
+            "moduleName": "BraintreePayPalMessaging",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD4ViewC",
+        "moduleName": "BraintreePayPalMessaging",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PayPalMessageViewEventDelegate",
+            "printedName": "PayPalMessageViewEventDelegate",
+            "usr": "s:14PayPalMessages0aB24MessageViewEventDelegateP",
+            "mangledName": "$s14PayPalMessages0aB24MessageViewEventDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PayPalMessageViewStateDelegate",
+            "printedName": "PayPalMessageViewStateDelegate",
+            "usr": "s:14PayPalMessages0aB24MessageViewStateDelegateP",
+            "mangledName": "$s14PayPalMessages0aB24MessageViewStateDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingAnalytics",
+        "printedName": "BTPayPalMessagingAnalytics",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "started",
+            "printedName": "started",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO7startedSSvpZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO7startedSSvpZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO7startedSSvgZ",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO7startedSSvgZ",
+                "moduleName": "BraintreePayPalMessaging",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO6failedSSvpZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO6failedSSvpZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO6failedSSvgZ",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO6failedSSvgZ",
+                "moduleName": "BraintreePayPalMessaging",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "succeeded",
+            "printedName": "succeeded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO9succeededSSvpZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO9succeededSSvpZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO9succeededSSvgZ",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO9succeededSSvgZ",
+                "moduleName": "BraintreePayPalMessaging",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD9AnalyticsO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD9AnalyticsO",
+        "moduleName": "BraintreePayPalMessaging",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingLogoType",
+        "printedName": "BTPayPalMessagingLogoType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "inline",
+            "printedName": "inline",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingLogoType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingLogoType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO6inlineyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO6inlineyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "primary",
+            "printedName": "primary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingLogoType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingLogoType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO7primaryyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO7primaryyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alternative",
+            "printedName": "alternative",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingLogoType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingLogoType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO11alternativeyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO11alternativeyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type) -> BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingLogoType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingLogoType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO4noneyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO4noneyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logoTypeRawValue",
+            "printedName": "logoTypeRawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageLogoType",
+                "printedName": "PayPalMessages.PayPalMessageLogoType",
+                "usr": "s:14PayPalMessages0aB15MessageLogoTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO04logoG8RawValue0bC8Messages0bc7MessagefG0Ovp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO04logoG8RawValue0bC8Messages0bc7MessagefG0Ovp",
+            "moduleName": "BraintreePayPalMessaging",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalMessageLogoType",
+                    "printedName": "PayPalMessages.PayPalMessageLogoType",
+                    "usr": "s:14PayPalMessages0aB15MessageLogoTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO04logoG8RawValue0bC8Messages0bc7MessagefG0Ovg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO04logoG8RawValue0bC8Messages0bc7MessagefG0Ovg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingLogoType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingLogoType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO9hashValueSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO9hashValueSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO9hashValueSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO9hashValueSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8LogoTypeO",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingTextAlignment",
+        "printedName": "BTPayPalMessagingTextAlignment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "left",
+            "printedName": "left",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingTextAlignment.Type) -> BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingTextAlignment",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingTextAlignment",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO4leftyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO4leftyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingTextAlignment.Type) -> BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingTextAlignment",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingTextAlignment",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO6centeryA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO6centeryA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "right",
+            "printedName": "right",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingTextAlignment.Type) -> BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingTextAlignment",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingTextAlignment",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO5rightyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO5rightyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "textAlignmentRawValue",
+            "printedName": "textAlignmentRawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageTextAlign",
+                "printedName": "PayPalMessages.PayPalMessageTextAlign",
+                "usr": "s:14PayPalMessages0aB16MessageTextAlignO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO04textG8RawValue0bC8Messages0bc7MessageF5AlignOvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO04textG8RawValue0bC8Messages0bc7MessageF5AlignOvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalMessageTextAlign",
+                    "printedName": "PayPalMessages.PayPalMessageTextAlign",
+                    "usr": "s:14PayPalMessages0aB16MessageTextAlignO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO04textG8RawValue0bC8Messages0bc7MessageF5AlignOvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO04textG8RawValue0bC8Messages0bc7MessageF5AlignOvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingTextAlignment",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingTextAlignment",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO9hashValueSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO9hashValueSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO9hashValueSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO9hashValueSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD13TextAlignmentO",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingDelegate",
+        "printedName": "BTPayPalMessagingDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didSelect",
+            "printedName": "didSelect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP9didSelectyyAA0ecD4ViewCF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8DelegateP9didSelectyyAA0ecD4ViewCF",
+            "moduleName": "BraintreePayPalMessaging",
+            "genericSig": "<τ_0_0 where τ_0_0 : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "sugared_genericSig": "<Self where Self : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willApply",
+            "printedName": "willApply(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP9willApplyyyAA0ecD4ViewCF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8DelegateP9willApplyyyAA0ecD4ViewCF",
+            "moduleName": "BraintreePayPalMessaging",
+            "genericSig": "<τ_0_0 where τ_0_0 : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "sugared_genericSig": "<Self where Self : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willAppear",
+            "printedName": "willAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP10willAppearyyAA0ecD4ViewCF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8DelegateP10willAppearyyAA0ecD4ViewCF",
+            "moduleName": "BraintreePayPalMessaging",
+            "genericSig": "<τ_0_0 where τ_0_0 : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "sugared_genericSig": "<Self where Self : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didAppear",
+            "printedName": "didAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP9didAppearyyAA0ecD4ViewCF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8DelegateP9didAppearyyAA0ecD4ViewCF",
+            "moduleName": "BraintreePayPalMessaging",
+            "genericSig": "<τ_0_0 where τ_0_0 : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "sugared_genericSig": "<Self where Self : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingView",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingView",
+                "usr": "c:@M@BraintreePayPalMessaging@objc(cs)BTPayPalMessagingView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP7onError_5erroryAA0ecD4ViewC_s0H0_ptF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8DelegateP7onError_5erroryAA0ecD4ViewC_s0H0_ptF",
+            "moduleName": "BraintreePayPalMessaging",
+            "genericSig": "<τ_0_0 where τ_0_0 : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "sugared_genericSig": "<Self where Self : BraintreePayPalMessaging.BTPayPalMessagingDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD8DelegateP",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD8DelegateP",
+        "moduleName": "BraintreePayPalMessaging",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingRequest",
+        "printedName": "BTPayPalMessagingRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV6amountSdSgvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pageType",
+            "printedName": "pageType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingPageType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8pageTypeAA0ecd4PageH0OSgvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offerType",
+            "printedName": "offerType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingOfferType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingOfferType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingOfferType",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV9offerTypeAA0ecd5OfferH0OSgvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buyerCountry",
+            "printedName": "buyerCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV12buyerCountrySSSgvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logoType",
+            "printedName": "logoType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingLogoType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0Ovp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0Ovp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingLogoType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0Ovg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0Ovg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingLogoType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0Ovs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0Ovs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0OvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV8logoTypeAA0ecd4LogoH0OvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "textAlignment",
+            "printedName": "textAlignment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingTextAlignment",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0Ovp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0Ovp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingTextAlignment",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0Ovg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0Ovg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingTextAlignment",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0Ovs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0Ovs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0OvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV13textAlignmentAA0ecd4TextH0OvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingColor",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingColor",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingColor",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvs",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvs",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvM",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV5colorAA0ecD5ColorOvM",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(amount:pageType:offerType:buyerCountry:logoType:textAlignment:color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingRequest",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingRequest",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingPageType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingPageType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD8PageTypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingOfferType",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingOfferType",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD9OfferTypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingLogoType",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingLogoType",
+                "hasDefaultArg": true,
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD8LogoTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingTextAlignment",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingTextAlignment",
+                "hasDefaultArg": true,
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD13TextAlignmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingColor",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "hasDefaultArg": true,
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV6amount8pageType05offerI012buyerCountry04logoI013textAlignment5colorACSdSg_AA0ecd4PageI0OSgAA0ecd5OfferI0OSgSSSgAA0ecd4LogoI0OAA0ecd4TextO0OAA0ecD5ColorOtcfc",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV6amount8pageType05offerI012buyerCountry04logoI013textAlignment5colorACSdSg_AA0ecd4PageI0OSgAA0ecd5OfferI0OSgSSSgAA0ecd4LogoI0OAA0ecd4TextO0OAA0ecD5ColorOtcfc",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD7RequestV",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD7RequestV",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingError",
+        "printedName": "BTPayPalMessagingError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fetchConfigurationFailed",
+            "printedName": "fetchConfigurationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingError.Type) -> BraintreePayPalMessaging.BTPayPalMessagingError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingError",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingError",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO24fetchConfigurationFailedyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO24fetchConfigurationFailedyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payPalClientIDNotFound",
+            "printedName": "payPalClientIDNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingError.Type) -> BraintreePayPalMessaging.BTPayPalMessagingError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingError",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingError",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO03payC16ClientIDNotFoundyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO03payC16ClientIDNotFoundyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDomain",
+            "printedName": "errorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO11errorDomainSSvpZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO11errorDomainSSvpZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO11errorDomainSSvgZ",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO11errorDomainSSvgZ",
+                "moduleName": "BraintreePayPalMessaging",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO9errorCodeSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO9errorCodeSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO9errorCodeSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO9errorCodeSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingError",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingError",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO8rawValueSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO8rawValueSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO8rawValueSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO8rawValueSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ErrorO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ErrorO",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalMessages",
+        "printedName": "PayPalMessages",
+        "declKind": "Import",
+        "moduleName": "BraintreePayPalMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTPayPalMessagingColor",
+        "printedName": "BTPayPalMessagingColor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "black",
+            "printedName": "black",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingColor.Type) -> BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingColor",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingColor",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO5blackyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO5blackyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "white",
+            "printedName": "white",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingColor.Type) -> BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingColor",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingColor",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO5whiteyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO5whiteyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "monochrome",
+            "printedName": "monochrome",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingColor.Type) -> BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingColor",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingColor",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO10monochromeyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO10monochromeyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "grayscale",
+            "printedName": "grayscale",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BraintreePayPalMessaging.BTPayPalMessagingColor.Type) -> BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTPayPalMessagingColor",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                    "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTPayPalMessagingColor",
+                        "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO9grayscaleyA2CmF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO9grayscaleyA2CmF",
+            "moduleName": "BraintreePayPalMessaging",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "messageColorRawValue",
+            "printedName": "messageColorRawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalMessageColor",
+                "printedName": "PayPalMessages.PayPalMessageColor",
+                "usr": "s:14PayPalMessages0aB12MessageColorO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO07messageF8RawValue0bC8Messages0bc7MessageF0Ovp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO07messageF8RawValue0bC8Messages0bc7MessageF0Ovp",
+            "moduleName": "BraintreePayPalMessaging",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalMessageColor",
+                    "printedName": "PayPalMessages.PayPalMessageColor",
+                    "usr": "s:14PayPalMessages0aB12MessageColorO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO07messageF8RawValue0bC8Messages0bc7MessageF0Ovg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO07messageF8RawValue0bC8Messages0bc7MessageF0Ovg",
+                "moduleName": "BraintreePayPalMessaging",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingColor",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTPayPalMessagingColor",
+                "printedName": "BraintreePayPalMessaging.BTPayPalMessagingColor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO2eeoiySbAC_ACtFZ",
+            "moduleName": "BraintreePayPalMessaging",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO9hashValueSivp",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO9hashValueSivp",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO9hashValueSivg",
+                "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO9hashValueSivg",
+                "moduleName": "BraintreePayPalMessaging",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO4hash4intoys6HasherVz_tF",
+            "moduleName": "BraintreePayPalMessaging",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24BraintreePayPalMessaging05BTPaycD5ColorO",
+        "mangledName": "$s24BraintreePayPalMessaging05BTPaycD5ColorO",
+        "moduleName": "BraintreePayPalMessaging",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 1362,
+      "length": 8,
+      "value": "\"BT_SDK\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 1946,
+      "length": 8,
+      "value": "\"paypal\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 1956,
+      "length": 10,
+      "value": "\"clientId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 2255,
+      "length": 12,
+      "value": "\"production\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3317,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 349,
+      "length": 21,
+      "value": "\"BraintreePayPalMessaging.BTPayPalMessagingView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 79,
+      "length": 38,
+      "value": "\"paypal-messaging:create-view:started\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 142,
+      "length": 37,
+      "value": "\"paypal-messaging:create-view:failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 40,
+      "value": "\"paypal-messaging:create-view:succeeded\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 433,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingError.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 52,
+      "value": "\"com.braintreepayments.BTPayPalMessagingErrorDomain\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingError.swift",
+      "kind": "StringLiteral",
+      "offset": 749,
+      "length": 42,
+      "value": "\"Failed to fetch Braintree configuration.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingError.swift",
+      "kind": "StringLiteral",
+      "offset": 849,
+      "length": 61,
+      "value": "\"Could not find PayPal client ID in Braintree configuration.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 433,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/braintree_ios\/braintree_ios\/Sources\/BraintreePayPalMessaging\/BTPayPalMessagingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 433,
+      "length": 22,
+      "value": "1"
+    }
+  ]
+}

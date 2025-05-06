@@ -92,30 +92,12 @@ jobs:
             "
           fi
 
-      - name: Create Package.swift
+      - name: Update Package.swift
         run: |
-          cat > Package.swift << EOF
-          // swift-tools-version:5.3
-          import PackageDescription
-
-          let package = Package(
-              name: "BraintreeSDK",
-              products: [
-                  .library(
-                      name: "BraintreeSDK",
-                      targets: ["BraintreeSDK"]
-                  ),
-              ],
-              dependencies: [],
-              targets: [
-                  .binaryTarget(
-                      name: "BraintreeSDK",
-                      url: "${{ env.BRAINTREE_URL }}",
-                      checksum: "${{ env.BRAINTREE_CHECKSUM }}"
-                  ),
-              ]
-          )
-          EOF
+          # Update Package.swift with the new URL and checksum
+          sed -i.bak -E "s|(name: \"BraintreeCore\",\\n[[:space:]]+url: \").*(\",)|\1${{ env.BRAINTREE_URL }}\2|g" Package.swift
+          sed -i.bak -E "s|(name: \"BraintreeCore\",\\n[[:space:]]+url: \".*\",\\n[[:space:]]+checksum: \").*(\")|\1${{ env.BRAINTREE_CHECKSUM }}\2|g" Package.swift
+          rm Package.swift.bak
 
       - name: Update README file
         run: |
@@ -132,6 +114,16 @@ jobs:
               .package(url: "https://github.com/yourusername/braintree_ios_spm.git", from: "${{ env.BRAINTREE_VERSION }}")
           ]
           ```
+
+          ## Available Products
+
+          This package provides the following Braintree modules:
+          - BraintreeCore
+          - BraintreeCard
+          - BraintreePayPal
+          - BraintreeApplePay
+          - BraintreeVenmo
+          - And many more...
 
           ## Documentation
 

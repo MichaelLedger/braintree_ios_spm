@@ -1,0 +1,130 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeShopperInsights
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import Foundation
+import PassKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum BTPageType : Swift.String {
+  case homepage
+  case about
+  case contact
+  case productCategory
+  case productDetails
+  case search
+  case cart
+  case checkout
+  case orderReview
+  case orderConfirmation
+  case miniCart
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct BTShopperInsightsRequest {
+  public init(email: Swift.String, phone: BraintreeShopperInsights.Phone)
+  public init(email: Swift.String)
+  public init(phone: BraintreeShopperInsights.Phone)
+}
+public struct Phone : Swift.Encodable {
+  public init(countryCode: Swift.String, nationalNumber: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum BTExperimentType : Swift.String {
+  case test
+  case control
+  public var formattedExperiment: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BTButtonType : Swift.String {
+  case payPal
+  case venmo
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BTShopperInsightsError : Swift.Int, Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case emptyBodyReturned
+  case invalidAuthorization
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class BTShopperInsightsClient {
+  public init(apiClient: BraintreeCore.BTAPIClient, shopperSessionID: Swift.String? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getRecommendedPaymentMethods(request: BraintreeShopperInsights.BTShopperInsightsRequest, experiment: Swift.String? = nil) async throws -> BraintreeShopperInsights.BTShopperInsightsResult
+  #endif
+  public func sendPresentedEvent(for buttonType: BraintreeShopperInsights.BTButtonType, presentmentDetails: BraintreeShopperInsights.BTPresentmentDetails)
+  public func sendSelectedEvent(for buttonType: BraintreeShopperInsights.BTButtonType)
+  public func isPayPalAppInstalled() -> Swift.Bool
+  public func isVenmoAppInstalled() -> Swift.Bool
+  @objc deinit
+}
+public class BTPresentmentDetails {
+  public init(buttonOrder: BraintreeShopperInsights.BTButtonOrder, experimentType: BraintreeShopperInsights.BTExperimentType, pageType: BraintreeShopperInsights.BTPageType)
+  @objc deinit
+}
+public enum BTButtonOrder : Swift.String {
+  case first
+  case second
+  case third
+  case fourth
+  case fifth
+  case sixth
+  case seventh
+  case eighth
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct BTShopperInsightsResult {
+  public var isPayPalRecommended: Swift.Bool
+  public var isVenmoRecommended: Swift.Bool
+  public var isEligibleInPayPalNetwork: Swift.Bool
+}
+extension BraintreeShopperInsights.BTPageType : Swift.Equatable {}
+extension BraintreeShopperInsights.BTPageType : Swift.Hashable {}
+extension BraintreeShopperInsights.BTPageType : Swift.RawRepresentable {}
+extension BraintreeShopperInsights.BTExperimentType : Swift.Equatable {}
+extension BraintreeShopperInsights.BTExperimentType : Swift.Hashable {}
+extension BraintreeShopperInsights.BTExperimentType : Swift.RawRepresentable {}
+extension BraintreeShopperInsights.BTButtonType : Swift.Equatable {}
+extension BraintreeShopperInsights.BTButtonType : Swift.Hashable {}
+extension BraintreeShopperInsights.BTButtonType : Swift.RawRepresentable {}
+extension BraintreeShopperInsights.BTShopperInsightsError : Swift.Hashable {}
+extension BraintreeShopperInsights.BTShopperInsightsError : Swift.RawRepresentable {}
+extension BraintreeShopperInsights.BTButtonOrder : Swift.Equatable {}
+extension BraintreeShopperInsights.BTButtonOrder : Swift.Hashable {}
+extension BraintreeShopperInsights.BTButtonOrder : Swift.RawRepresentable {}

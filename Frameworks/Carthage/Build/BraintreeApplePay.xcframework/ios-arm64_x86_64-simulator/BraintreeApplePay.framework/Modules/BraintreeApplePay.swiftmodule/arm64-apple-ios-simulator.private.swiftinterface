@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeApplePay
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import Foundation
+import PassKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum BTApplePayError : Swift.Int, Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case unsupported
+  case noApplePayCardsReturned
+  case failedToCreateNonce
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class BTApplePayClient : ObjectiveC.NSObject {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc(makePaymentRequest:) public func makePaymentRequest(completion: @escaping (PassKit.PKPaymentRequest?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func makePaymentRequest() async throws -> PassKit.PKPaymentRequest
+  #endif
+  @objc(tokenizeApplePayPayment:completion:) public func tokenize(_ payment: PassKit.PKPayment, completion: @escaping (BraintreeApplePay.BTApplePayCardNonce?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func tokenize(_ payment: PassKit.PKPayment) async throws -> BraintreeApplePay.BTApplePayCardNonce
+  #endif
+  @objc deinit
+}
+extension BraintreeCore.BTConfiguration {
+  @_documentation(visibility: private) @objc dynamic public var isApplePayEnabled: Swift.Bool {
+    @objc get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTApplePayCardNonce : BraintreeCore.BTPaymentMethodNonce {
+  @objc final public let binData: BraintreeCore.BTBinData
+  @objc public var isDeviceToken: Swift.Bool
+  @objc deinit
+}
+extension BraintreeApplePay.BTApplePayError : Swift.Hashable {}
+extension BraintreeApplePay.BTApplePayError : Swift.RawRepresentable {}

@@ -1,0 +1,4 @@
+framework module BraintreeApplePay {
+  header "BraintreeApplePay-Swift.h"
+  requires objc
+}

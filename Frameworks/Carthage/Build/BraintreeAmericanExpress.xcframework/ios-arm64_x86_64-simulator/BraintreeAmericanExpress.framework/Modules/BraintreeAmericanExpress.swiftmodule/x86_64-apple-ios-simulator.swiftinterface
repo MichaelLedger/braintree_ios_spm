@@ -1,0 +1,50 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeAmericanExpress
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCore
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTAmericanExpressRewardsBalance : ObjectiveC.NSObject {
+  @objc public var errorCode: Swift.String?
+  @objc public var errorMessage: Swift.String?
+  @objc public var conversionRate: Swift.String?
+  @objc public var currencyAmount: Swift.String?
+  @objc public var currencyIsoCode: Swift.String?
+  @objc public var requestID: Swift.String?
+  @objc public var rewardsAmount: Swift.String?
+  @objc public var rewardsUnit: Swift.String?
+  @objc deinit
+}
+public enum BTAmericanExpressError : Swift.Int, Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case noRewardsData
+  case deallocated
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class BTAmericanExpressClient : ObjectiveC.NSObject {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc(getRewardsBalanceForNonce:currencyIsoCode:completion:) public func getRewardsBalance(forNonce nonce: Swift.String, currencyISOCode: Swift.String, completion: @escaping (BraintreeAmericanExpress.BTAmericanExpressRewardsBalance?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getRewardsBalance(forNonce nonce: Swift.String, currencyISOCode: Swift.String) async throws -> BraintreeAmericanExpress.BTAmericanExpressRewardsBalance
+  #endif
+  @objc deinit
+}
+extension BraintreeAmericanExpress.BTAmericanExpressError : Swift.Hashable {}
+extension BraintreeAmericanExpress.BTAmericanExpressError : Swift.RawRepresentable {}

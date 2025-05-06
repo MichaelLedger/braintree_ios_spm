@@ -1,0 +1,75 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeLocalPayment
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AuthenticationServices
+import BraintreeCore
+import BraintreeDataCollector
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol BTLocalPaymentRequestDelegate {
+  @objc func localPaymentStarted(_ request: BraintreeLocalPayment.BTLocalPaymentRequest, paymentID: Swift.String, start: @escaping () -> Swift.Void)
+}
+@objc @objcMembers public class BTLocalPaymentClient : BraintreeCore.BTWebAuthenticationSessionClient {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc public func startPaymentFlow(_ request: BraintreeLocalPayment.BTLocalPaymentRequest, completion: @escaping (BraintreeLocalPayment.BTLocalPaymentResult?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func startPaymentFlow(_ request: BraintreeLocalPayment.BTLocalPaymentRequest) async throws -> BraintreeLocalPayment.BTLocalPaymentResult
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTLocalPaymentRequest : ObjectiveC.NSObject {
+  @objc public var paymentType: Swift.String?
+  @objc public var paymentTypeCountryCode: Swift.String?
+  @objc public var merchantAccountID: Swift.String?
+  @objc public var address: BraintreeCore.BTPostalAddress?
+  @objc public var amount: Swift.String?
+  @objc public var currencyCode: Swift.String?
+  @objc public var displayName: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var givenName: Swift.String?
+  @objc public var surname: Swift.String?
+  @objc public var phone: Swift.String?
+  @objc public var isShippingAddressRequired: Swift.Bool
+  @objc public var bic: Swift.String?
+  @objc weak public var localPaymentFlowDelegate: (any BraintreeLocalPayment.BTLocalPaymentRequestDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum BTLocalPaymentError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case disabled
+  case appSwitchFailed
+  case integration
+  case noAccountData
+  case canceled(Swift.String)
+  case failedToCreateNonce
+  case fetchConfigurationFailed
+  case missingRedirectURL
+  case missingReturnURL
+  case webSessionError(any Swift.Error)
+  public static var errorDomain: Swift.String
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String {
+    get
+  }
+  public static func == (lhs: BraintreeLocalPayment.BTLocalPaymentError, rhs: BraintreeLocalPayment.BTLocalPaymentError) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTLocalPaymentResult : ObjectiveC.NSObject {
+  @objc final public let billingAddress: BraintreeCore.BTPostalAddress?
+  @objc final public let clientMetadataID: Swift.String?
+  @objc final public let email: Swift.String?
+  @objc final public let firstName: Swift.String?
+  @objc final public let lastName: Swift.String?
+  @objc final public let nonce: Swift.String
+  @objc final public let payerID: Swift.String?
+  @objc final public let phone: Swift.String?
+  @objc final public let shippingAddress: BraintreeCore.BTPostalAddress?
+  @objc final public let type: Swift.String?
+  @objc deinit
+}

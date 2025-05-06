@@ -1,0 +1,4 @@
+framework module BraintreeShopperInsights {
+  header "BraintreeShopperInsights-Swift.h"
+  requires objc
+}

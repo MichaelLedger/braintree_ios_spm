@@ -1,0 +1,4 @@
+framework module BraintreeThreeDSecure {
+  header "BraintreeThreeDSecure-Swift.h"
+  requires objc
+}

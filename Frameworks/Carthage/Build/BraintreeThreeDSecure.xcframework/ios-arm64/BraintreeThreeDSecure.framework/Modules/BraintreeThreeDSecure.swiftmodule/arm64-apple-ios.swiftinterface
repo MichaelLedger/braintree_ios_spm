@@ -1,0 +1,345 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BraintreeThreeDSecure
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BraintreeCard
+import BraintreeCore
+import CardinalMobile
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureV2TextBoxCustomization : BraintreeThreeDSecure.BTThreeDSecureV2BaseCustomization {
+  @objc public var borderWidth: Swift.Int {
+    @objc get
+    @objc(setBorderWidth:) set
+  }
+  @objc public var borderColor: Swift.String? {
+    @objc get
+    @objc(setBorderColor:) set
+  }
+  @objc public var cornerRadius: Swift.Int {
+    @objc get
+    @objc(setCornerRadius:) set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class BTThreeDSecureRenderType : ObjectiveC.NSObject, Swift.OptionSet {
+  @objc final public let rawValue: Swift.Int
+  @objc required public init(rawValue: Swift.Int)
+  @objc public static let otp: BraintreeThreeDSecure.BTThreeDSecureRenderType
+  @objc public static let html: BraintreeThreeDSecure.BTThreeDSecureRenderType
+  @objc public static let singleSelect: BraintreeThreeDSecure.BTThreeDSecureRenderType
+  @objc public static let multiSelect: BraintreeThreeDSecure.BTThreeDSecureRenderType
+  @objc public static let oob: BraintreeThreeDSecure.BTThreeDSecureRenderType
+  public typealias ArrayLiteralElement = BraintreeThreeDSecure.BTThreeDSecureRenderType
+  public typealias Element = BraintreeThreeDSecure.BTThreeDSecureRenderType
+  public typealias RawValue = Swift.Int
+  @objc deinit
+}
+@objc @objcMembers public class BTThreeDSecureClient : ObjectiveC.NSObject {
+  @objc(initWithAPIClient:) public init(apiClient: BraintreeCore.BTAPIClient)
+  @objc public func startPaymentFlow(_ request: BraintreeThreeDSecure.BTThreeDSecureRequest, completion: @escaping (BraintreeThreeDSecure.BTThreeDSecureResult?, (any Swift.Error)?) -> Swift.Void)
+  @objc(prepareLookup:completion:) public func prepareLookup(_ request: BraintreeThreeDSecure.BTThreeDSecureRequest, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func prepareLookup(_ request: BraintreeThreeDSecure.BTThreeDSecureRequest) async throws -> Swift.String
+  #endif
+  @objc(initializeChallengeWithLookupResponse:request:completion:) public func initializeChallenge(lookupResponse: Swift.String, request: BraintreeThreeDSecure.BTThreeDSecureRequest, completion: @escaping (BraintreeThreeDSecure.BTThreeDSecureResult?, (any Swift.Error)?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func initializeChallenge(lookupResponse: Swift.String, request: BraintreeThreeDSecure.BTThreeDSecureRequest) async throws -> BraintreeThreeDSecure.BTThreeDSecureResult
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureV2LabelCustomization : BraintreeThreeDSecure.BTThreeDSecureV2BaseCustomization {
+  @objc public var headingTextColor: Swift.String? {
+    @objc get
+    @objc(setHeadingTextColor:) set
+  }
+  @objc public var headingTextFontName: Swift.String? {
+    @objc get
+    @objc(setHeadingTextFontName:) set
+  }
+  @objc public var headingTextFontSize: Swift.Int {
+    @objc get
+    @objc(setHeadingTextFontSize:) set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum BTThreeDSecureV2ButtonType : Swift.Int {
+  case verify
+  case `continue`
+  case next
+  case cancel
+  case resend
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureV2UICustomization : ObjectiveC.NSObject {
+  @objc public var toolbarCustomization: BraintreeThreeDSecure.BTThreeDSecureV2ToolbarCustomization? {
+    @objc get
+    @objc set
+  }
+  @objc public var labelCustomization: BraintreeThreeDSecure.BTThreeDSecureV2LabelCustomization? {
+    @objc get
+    @objc set
+  }
+  @objc public var textBoxCustomization: BraintreeThreeDSecure.BTThreeDSecureV2TextBoxCustomization? {
+    @objc get
+    @objc set
+  }
+  @objc(setButtonCustomization:buttonType:) public func setButton(_ buttonCustomization: BraintreeThreeDSecure.BTThreeDSecureV2ButtonCustomization, buttonType: BraintreeThreeDSecure.BTThreeDSecureV2ButtonType)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureRequest : ObjectiveC.NSObject {
+  @objc public var nonce: Swift.String?
+  @objc public var customFields: [Swift.String : Swift.String]?
+  @objc public var amount: Foundation.NSDecimalNumber?
+  @objc public var accountType: BraintreeThreeDSecure.BTThreeDSecureAccountType
+  @objc public var billingAddress: BraintreeThreeDSecure.BTThreeDSecurePostalAddress?
+  @objc public var mobilePhoneNumber: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var shippingMethod: BraintreeThreeDSecure.BTThreeDSecureShippingMethod
+  @objc public var additionalInformation: BraintreeThreeDSecure.BTThreeDSecureAdditionalInformation?
+  @objc public var challengeRequested: Swift.Bool
+  @objc public var exemptionRequested: Swift.Bool
+  @objc public var requestedExemptionType: BraintreeThreeDSecure.BTThreeDSecureRequestedExemptionType
+  @objc public var dataOnlyRequested: Swift.Bool
+  @objc @available(*, deprecated, renamed: "cardAddChallengeRequested", message: "Use the `cardAddChallengeRequested` boolean property instead")
+  public var cardAddChallenge: BraintreeThreeDSecure.BTThreeDSecureCardAddChallenge {
+    @objc get
+    @objc set
+  }
+  @objc public var cardAddChallengeRequested: Swift.Bool
+  @objc public var v2UICustomization: BraintreeThreeDSecure.BTThreeDSecureV2UICustomization?
+  @objc public var uiType: BraintreeThreeDSecure.BTThreeDSecureUIType
+  @objc public var renderTypes: [BraintreeThreeDSecure.BTThreeDSecureRenderType]?
+  @objc public var requestorAppURL: Swift.String?
+  @objc weak public var threeDSecureRequestDelegate: (any BraintreeThreeDSecure.BTThreeDSecureRequestDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureAdditionalInformation : ObjectiveC.NSObject {
+  @objc public var shippingAddress: BraintreeThreeDSecure.BTThreeDSecurePostalAddress?
+  @objc public var shippingMethodIndicator: Swift.String?
+  @objc public var productCode: Swift.String?
+  @objc public var deliveryTimeframe: Swift.String?
+  @objc public var deliveryEmail: Swift.String?
+  @objc public var reorderIndicator: Swift.String?
+  @objc public var preorderIndicator: Swift.String?
+  @objc public var preorderDate: Swift.String?
+  @objc public var giftCardAmount: Swift.String?
+  @objc public var giftCardCurrencyCode: Swift.String?
+  @objc public var giftCardCount: Swift.String?
+  @objc public var accountAgeIndicator: Swift.String?
+  @objc public var accountCreateDate: Swift.String?
+  @objc public var accountChangeIndicator: Swift.String?
+  @objc public var accountChangeDate: Swift.String?
+  @objc public var accountPwdChangeIndicator: Swift.String?
+  @objc public var accountPwdChangeDate: Swift.String?
+  @objc public var shippingAddressUsageIndicator: Swift.String?
+  @objc public var shippingAddressUsageDate: Swift.String?
+  @objc public var transactionCountDay: Swift.String?
+  @objc public var transactionCountYear: Swift.String?
+  @objc public var addCardAttempts: Swift.String?
+  @objc public var accountPurchases: Swift.String?
+  @objc public var fraudActivity: Swift.String?
+  @objc public var shippingNameIndicator: Swift.String?
+  @objc public var paymentAccountIndicator: Swift.String?
+  @objc public var paymentAccountAge: Swift.String?
+  @objc public var addressMatch: Swift.String?
+  @objc public var accountID: Swift.String?
+  @objc public var ipAddress: Swift.String?
+  @objc public var orderDescription: Swift.String?
+  @objc public var taxAmount: Swift.String?
+  @objc public var userAgent: Swift.String?
+  @objc public var authenticationIndicator: Swift.String?
+  @objc public var installment: Swift.String?
+  @objc public var purchaseDate: Swift.String?
+  @objc public var recurringEnd: Swift.String?
+  @objc public var recurringFrequency: Swift.String?
+  @objc public var sdkMaxTimeout: Swift.String?
+  @objc public var workPhoneNumber: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum BTThreeDSecureUIType : Swift.Int {
+  case native
+  case html
+  case both
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureV2ToolbarCustomization : BraintreeThreeDSecure.BTThreeDSecureV2BaseCustomization {
+  @objc public var backgroundColor: Swift.String? {
+    @objc get
+    @objc(setBackgroundColor:) set
+  }
+  @objc public var headerText: Swift.String? {
+    @objc get
+    @objc(setHeaderText:) set
+  }
+  @objc public var buttonText: Swift.String? {
+    @objc get
+    @objc(setButtonText:) set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol BTThreeDSecureRequestDelegate {
+  @objc func onLookupComplete(_ request: BraintreeThreeDSecure.BTThreeDSecureRequest, lookupResult: BraintreeThreeDSecure.BTThreeDSecureResult, next: @escaping () -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureV2ButtonCustomization : BraintreeThreeDSecure.BTThreeDSecureV2BaseCustomization {
+  @objc public var backgroundColor: Swift.String? {
+    @objc get
+    @objc(setBackgroundColor:) set
+  }
+  @objc public var cornerRadius: Swift.Int {
+    @objc get
+    @objc(setCornerRadius:) set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTThreeDSecureResult : ObjectiveC.NSObject {
+  @objc public var tokenizedCard: BraintreeCard.BTCardNonce?
+  @objc public var lookup: BraintreeThreeDSecure.BTThreeDSecureLookup?
+  @objc public var errorMessage: Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecureV2BaseCustomization : ObjectiveC.NSObject {
+  @objc public var textFontName: Swift.String? {
+    @objc get
+    @objc(setTextFontName:) set
+  }
+  @objc public var textColor: Swift.String? {
+    @objc get
+    @objc(setTextColor:) set
+  }
+  @objc public var textFontSize: Swift.Int {
+    @objc get
+    @objc(setTextFontSize:) set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum BTThreeDSecureAccountType : Swift.Int {
+  case unspecified
+  case credit
+  case debit
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTThreeDSecureShippingMethod : Swift.Int {
+  case unspecified
+  case sameDay
+  case expedited
+  case priority
+  case ground
+  case electronicDelivery
+  case shipToStore
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTThreeDSecureCardAddChallenge : Swift.Int {
+  case unspecified
+  case requested
+  case notRequested
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTThreeDSecureRequestedExemptionType : Swift.Int {
+  case unspecified
+  case lowValue
+  case secureCorporate
+  case trustedBeneficiary
+  case transactionRiskAnalysis
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BTThreeDSecureError : Swift.Error, Foundation.CustomNSError, Foundation.LocalizedError, Swift.Equatable {
+  case unknown
+  case failedLookup([Swift.String : Any])
+  case failedAuthentication(Swift.String)
+  case configuration(Swift.String)
+  case noBodyReturned
+  case canceled
+  case invalidAPIClient
+  case jsonSerializationFailure
+  case deallocated
+  case exceededTimeoutLimit
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+  public static func == (lhs: BraintreeThreeDSecure.BTThreeDSecureError, rhs: BraintreeThreeDSecure.BTThreeDSecureError) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BTThreeDSecurePostalAddress : ObjectiveC.NSObject {
+  @objc public var givenName: Swift.String?
+  @objc public var surname: Swift.String?
+  @objc public var streetAddress: Swift.String?
+  @objc public var extendedAddress: Swift.String?
+  @objc public var line3: Swift.String?
+  @objc public var locality: Swift.String?
+  @objc public var region: Swift.String?
+  @objc public var postalCode: Swift.String?
+  @objc public var countryCodeAlpha2: Swift.String?
+  @objc public var phoneNumber: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class BTThreeDSecureLookup : ObjectiveC.NSObject {
+  @objc public var paReq: Swift.String?
+  @objc public var md: Swift.String?
+  @objc public var acsURL: Foundation.URL?
+  @objc public var termURL: Foundation.URL?
+  @objc public var threeDSecureVersion: Swift.String?
+  @objc public var isThreeDSecureVersion2: Swift.Bool
+  @objc public var transactionID: Swift.String?
+  @objc public var requiresUserAuthentication: Swift.Bool
+  @objc deinit
+}
+extension BraintreeThreeDSecure.BTThreeDSecureV2ButtonType : Swift.Equatable {}
+extension BraintreeThreeDSecure.BTThreeDSecureV2ButtonType : Swift.Hashable {}
+extension BraintreeThreeDSecure.BTThreeDSecureV2ButtonType : Swift.RawRepresentable {}
+extension BraintreeThreeDSecure.BTThreeDSecureUIType : Swift.Equatable {}
+extension BraintreeThreeDSecure.BTThreeDSecureUIType : Swift.Hashable {}
+extension BraintreeThreeDSecure.BTThreeDSecureUIType : Swift.RawRepresentable {}
+extension BraintreeThreeDSecure.BTThreeDSecureAccountType : Swift.Equatable {}
+extension BraintreeThreeDSecure.BTThreeDSecureAccountType : Swift.Hashable {}
+extension BraintreeThreeDSecure.BTThreeDSecureAccountType : Swift.RawRepresentable {}
+extension BraintreeThreeDSecure.BTThreeDSecureShippingMethod : Swift.Equatable {}
+extension BraintreeThreeDSecure.BTThreeDSecureShippingMethod : Swift.Hashable {}
+extension BraintreeThreeDSecure.BTThreeDSecureShippingMethod : Swift.RawRepresentable {}
+extension BraintreeThreeDSecure.BTThreeDSecureCardAddChallenge : Swift.Equatable {}
+extension BraintreeThreeDSecure.BTThreeDSecureCardAddChallenge : Swift.Hashable {}
+extension BraintreeThreeDSecure.BTThreeDSecureCardAddChallenge : Swift.RawRepresentable {}
+extension BraintreeThreeDSecure.BTThreeDSecureRequestedExemptionType : Swift.Equatable {}
+extension BraintreeThreeDSecure.BTThreeDSecureRequestedExemptionType : Swift.Hashable {}
+extension BraintreeThreeDSecure.BTThreeDSecureRequestedExemptionType : Swift.RawRepresentable {}
