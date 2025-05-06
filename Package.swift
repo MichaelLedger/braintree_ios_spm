@@ -3,9 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Braintree",
-    platforms: [
-        .iOS(.v14)
-    ],
+    platforms: [.iOS(.v14)],
     products: [
         .library(
             name: "BraintreeAmericanExpress",
@@ -59,14 +57,6 @@ let package = Package(
             name: "BraintreeVenmo",
             targets: ["BraintreeVenmo"]
         ),
-        .library(
-            name: "CardinalMobile",
-            targets: ["CardinalMobile"]
-        ),
-        .library(
-            name: "PPRiskMagnes",
-            targets: ["PPRiskMagnes"]
-        ),
         // Complete SDK
         .library(
             name: "Braintree", 
@@ -89,66 +79,58 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        // All targets extract from a single XCFramework archive
+        // All binary targets pointing to individual XCFramework zips
         .binaryTarget(
             name: "BraintreeCore",
-            path: "Frameworks/BraintreeCore.xcframework"
+            path: "XCFrameworkZips/BraintreeCore.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeCard",
-            path: "Frameworks/BraintreeCard.xcframework"
+            path: "XCFrameworkZips/BraintreeCard.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeAmericanExpress",
-            path: "Frameworks/BraintreeAmericanExpress.xcframework"
+            path: "XCFrameworkZips/BraintreeAmericanExpress.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeApplePay",
-            path: "Frameworks/BraintreeApplePay.xcframework"
+            path: "XCFrameworkZips/BraintreeApplePay.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeDataCollector",
-            path: "Frameworks/BraintreeDataCollector.xcframework"
+            path: "XCFrameworkZips/BraintreeDataCollector.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeLocalPayment",
-            path: "Frameworks/BraintreeLocalPayment.xcframework"
+            path: "XCFrameworkZips/BraintreeLocalPayment.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreePayPal",
-            path: "Frameworks/BraintreePayPal.xcframework"
+            path: "XCFrameworkZips/BraintreePayPal.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreePayPalMessaging",
-            path: "Frameworks/BraintreePayPalMessaging.xcframework"
+            path: "XCFrameworkZips/BraintreePayPalMessaging.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreePayPalNativeCheckout",
-            path: "Frameworks/BraintreePayPalNativeCheckout.xcframework"
+            path: "XCFrameworkZips/BraintreePayPalNativeCheckout.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeSEPADirectDebit",
-            path: "Frameworks/BraintreeSEPADirectDebit.xcframework"
+            path: "XCFrameworkZips/BraintreeSEPADirectDebit.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeShopperInsights",
-            path: "Frameworks/BraintreeShopperInsights.xcframework"
+            path: "XCFrameworkZips/BraintreeShopperInsights.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeThreeDSecure",
-            path: "Frameworks/BraintreeThreeDSecure.xcframework"
+            path: "XCFrameworkZips/BraintreeThreeDSecure.xcframework.zip"
         ),
         .binaryTarget(
             name: "BraintreeVenmo",
-            path: "Frameworks/BraintreeVenmo.xcframework"
-        ),
-        .binaryTarget(
-            name: "CardinalMobile",
-            path: "Frameworks/CardinalMobile.xcframework"
-        ),
-        .binaryTarget(
-            name: "PPRiskMagnes",
-            path: "Frameworks/PPRiskMagnes.xcframework"
+            path: "XCFrameworkZips/BraintreeVenmo.xcframework.zip"
         )
     ]
 ) 
