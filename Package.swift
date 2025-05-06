@@ -35,11 +35,11 @@ let package = Package(
         ),
         .library(
             name: "BraintreePayPalMessaging",
-            targets: ["BraintreePayPalMessaging"]
+            targets: ["BraintreePayPalMessaging", "PayPalMessages"]
         ),
         .library(
             name: "BraintreePayPalNativeCheckout",
-            targets: ["BraintreePayPalNativeCheckout"]
+            targets: ["BraintreePayPalNativeCheckout", "PayPalCheckout"]
         ),
         .library(
             name: "BraintreeSEPADirectDebit",
@@ -75,7 +75,9 @@ let package = Package(
                 "BraintreeSEPADirectDebit",
                 "BraintreeShopperInsights",
                 "CardinalMobile",
-                "PPRiskMagnes"
+                "PPRiskMagnes",
+                "PayPalMessages",
+                "PayPalCheckout"
             ]
         ),
         // Required additional modules
@@ -86,6 +88,14 @@ let package = Package(
         .library(
             name: "PPRiskMagnes",
             targets: ["PPRiskMagnes"]
+        ),
+        .library(
+            name: "PayPalMessages",
+            targets: ["PayPalMessages"]
+        ),
+        .library(
+            name: "PayPalCheckout",
+            targets: ["PayPalCheckout"]
         )
     ],
     dependencies: [],
@@ -151,6 +161,17 @@ let package = Package(
         .binaryTarget(
             name: "PPRiskMagnes",
             path: "XCFrameworkZips/PPRiskMagnes.xcframework.zip"
+        ),
+        // PayPal dependencies
+        .binaryTarget(
+            name: "PayPalMessages",
+            url: "https://github.com/paypal/paypal-messages-ios/releases/download/1.0.0/PayPalMessages.xcframework.zip",
+            checksum: "565ab72a3ab75169e41685b16e43268a39e24217a12a641155961d8b10ffe1b4"
+        ),
+        .binaryTarget(
+            name: "PayPalCheckout",
+            url: "https://github.com/paypal/paypalcheckout-ios/releases/download/1.3.0/PayPalCheckout.xcframework.zip",
+            checksum: "d65186f38f390cb9ae0431ecacf726774f7f89f5474c48244a07d17b248aa035"
         )
     ]
 ) 
