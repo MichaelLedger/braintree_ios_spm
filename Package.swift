@@ -23,15 +23,15 @@ let package = Package(
         ),
         .library(
             name: "BraintreeDataCollector",
-            targets: ["BraintreeDataCollector"]
+            targets: ["BraintreeDataCollector", "PPRiskMagnes"]
         ),
         .library(
             name: "BraintreeLocalPayment",
-            targets: ["BraintreeLocalPayment"]
+            targets: ["BraintreeLocalPayment", "PPRiskMagnes"]
         ),
         .library(
             name: "BraintreePayPal",
-            targets: ["BraintreePayPal"]
+            targets: ["BraintreePayPal", "PPRiskMagnes"]
         ),
         .library(
             name: "BraintreePayPalMessaging",
@@ -51,7 +51,7 @@ let package = Package(
         ),
         .library(
             name: "BraintreeThreeDSecure",
-            targets: ["BraintreeThreeDSecure"]
+            targets: ["BraintreeThreeDSecure", "CardinalMobile", "PPRiskMagnes"]
         ),
         .library(
             name: "BraintreeVenmo",
@@ -73,8 +73,19 @@ let package = Package(
                 "BraintreePayPalMessaging",
                 "BraintreePayPalNativeCheckout",
                 "BraintreeSEPADirectDebit",
-                "BraintreeShopperInsights"
+                "BraintreeShopperInsights",
+                "CardinalMobile",
+                "PPRiskMagnes"
             ]
+        ),
+        // Required additional modules
+        .library(
+            name: "CardinalMobile",
+            targets: ["CardinalMobile"]
+        ),
+        .library(
+            name: "PPRiskMagnes",
+            targets: ["PPRiskMagnes"]
         )
     ],
     dependencies: [],
@@ -131,6 +142,15 @@ let package = Package(
         .binaryTarget(
             name: "BraintreeVenmo",
             path: "XCFrameworkZips/BraintreeVenmo.xcframework.zip"
+        ),
+        // Required additional binary targets
+        .binaryTarget(
+            name: "CardinalMobile",
+            path: "XCFrameworkZips/CardinalMobile.xcframework.zip"
+        ),
+        .binaryTarget(
+            name: "PPRiskMagnes",
+            path: "XCFrameworkZips/PPRiskMagnes.xcframework.zip"
         )
     ]
 ) 

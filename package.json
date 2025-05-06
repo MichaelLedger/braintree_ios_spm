@@ -21,6 +21,68 @@
   "braintree": {
     "version": "6.30.0",
     "url": "https://github.com/braintree/braintree_ios/releases/download/6.30.0/Braintree.xcframework.zip",
-    "checksum": "637e0a9961af4dd83f2a67085841f7fb7cca01dfa82198cca0b8818ba4a262e8"
+    "mainChecksum": "8957c69abebdec7c9a35e1bd72110775899f527d912320169cb319ee3c7971a1",
+    "frameworks": [
+      {
+        "name": "BraintreeAmericanExpress",
+        "checksum": "cea378354562eb69039038697b1422f088a75a405ce080e0411c54496809b07e"
+      },
+      {
+        "name": "BraintreeApplePay",
+        "checksum": "ef7ac0705e88f211e7c03d98ed8e3f3971159a5c613fecdaebe6642c8e530949"
+      },
+      {
+        "name": "BraintreeCard",
+        "checksum": "832fe35b88a7d190e0309b32b59e56be0c16a15f79e4c0facc005f3ac7b9329e"
+      },
+      {
+        "name": "BraintreeCore",
+        "checksum": "0bfb0b0756cff64ec445a3ded80e5227992c9366a37e1f922e238348d3f92238"
+      },
+      {
+        "name": "BraintreeDataCollector",
+        "checksum": "e8b7c6eab4947fa8f88e346a8251fd03f47efc55cf226c77ed2964c59ad7c705"
+      },
+      {
+        "name": "BraintreeLocalPayment",
+        "checksum": "6cc082346db6a2e4732094441f43c2e8e235e390e3d17ae50d93ff843f94fc8e"
+      },
+      {
+        "name": "BraintreePayPal",
+        "checksum": "e948412e9e351024acaa155bfa1efac8b96839513c7b89cbe17345edf0a3a288"
+      },
+      {
+        "name": "BraintreePayPalMessaging",
+        "checksum": "88b7e9f8a619730fd8b71911fb4dd1ae52160fd5678af8980bffd773e2aad5fd"
+      },
+      {
+        "name": "BraintreePayPalNativeCheckout",
+        "checksum": "299f235daddccab8c258940c42eb790303a64341d549a33261737da5d56f6608"
+      },
+      {
+        "name": "BraintreeSEPADirectDebit",
+        "checksum": "d3c3461bebe0b70d0e6e33091e3c52c4d68ffe1566f5d4e4e2c44befbd5304cf"
+      },
+      {
+        "name": "BraintreeShopperInsights",
+        "checksum": "35e589089c370df35b3eb48ad864eb888cd866280f130822b087a42a1b180b73"
+      },
+      {
+        "name": "BraintreeThreeDSecure",
+        "checksum": "32f53b6c9bebc4d8f0de2865648beaf3166d8724c5307fe0ffa94039e8755810"
+      },
+      {
+        "name": "BraintreeVenmo",
+        "checksum": "3aea5a2be4e75d59648a3a376720086417d742299d00c1345ef8e7fb3852102a"
+      },
+      {
+        "name": "CardinalMobile",
+        "checksum": "9fa0aa696c14e145b3cdd6bf147bdf43a89f490e6cd6540cbf5aa210cb5cc9c4"
+      },
+      {
+        "name": "PPRiskMagnes",
+        "checksum": "0145ef2ccdb73ab5fde5e83c19a54856cf3ca571bf7d29f8cddae460694b1666"
+      }
+    ]
   }
 }
