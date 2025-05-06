@@ -21,6 +21,6 @@
   "braintree": {
     "version": "6.30.0",
     "url": "https://github.com/braintree/braintree_ios/releases/download/6.30.0/Braintree.xcframework.zip",
-    "checksum": "8957c69abebdec7c9a35e1bd72110775899f527d912320169cb319ee3c7971a1"
+    "checksum": "637e0a9961af4dd83f2a67085841f7fb7cca01dfa82198cca0b8818ba4a262e8"
   }
-} 
+}
