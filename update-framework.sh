@@ -2,14 +2,44 @@
 
 # Script to manually update the Braintree XCFramework in this SPM package
 # Usage: ./update-framework.sh [version] [--force]
-# If no version is provided, it will use 6.30.0 as default
+# If no version is provided, it will fetch the latest release version
 # Use --force to regenerate zips even if the version hasn't changed
 
 set -e
 
-BRAINTREE_VERSION=${1:-"6.30.0"}
+# Function to fetch latest release version
+fetch_latest_version() {
+    local api_url="https://api.github.com/repos/braintree/braintree_ios/releases/latest"
+    local latest_version
+    
+    if command -v curl &> /dev/null; then
+        latest_version=$(curl -s "$api_url" | grep -o '"tag_name": "[^"]*"' | cut -d'"' -f4)
+    elif command -v wget &> /dev/null; then
+        latest_version=$(wget -qO- "$api_url" | grep -o '"tag_name": "[^"]*"' | cut -d'"' -f4)
+    else
+        echo "Error: Neither curl nor wget found. Please install one of them or specify version manually."
+        exit 1
+    fi
+    
+    if [ -z "$latest_version" ]; then
+        echo "Error: Failed to fetch latest version. Please specify version manually."
+        exit 1
+    fi
+    
+    echo "$latest_version"
+}
+
+# Get version from argument or fetch latest
+if [ -n "$1" ] && [ "$1" != "--force" ]; then
+    BRAINTREE_VERSION="$1"
+else
+    echo "No version specified. Fetching latest release version..."
+    BRAINTREE_VERSION=$(fetch_latest_version)
+    echo "Latest version: $BRAINTREE_VERSION"
+fi
+
 FORCE_REGENERATE=false
-if [ "$2" = "--force" ]; then
+if [ "$2" = "--force" ] || [ "$1" = "--force" ]; then
     FORCE_REGENERATE=true
 fi
 
