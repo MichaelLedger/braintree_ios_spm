@@ -1,10 +1,10 @@
 {
   "name": "braintree_ios_spm",
-  "version": "6.34.0",
+  "version": "6.32.0",
   "description": "Braintree iOS SDK Swift Package Manager distribution",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/braintree_ios_spm.git"
+    "url": "git+https://github.com/MichaelLedger/braintree_ios_spm.git"
   },
   "keywords": [
     "braintree",
@@ -15,65 +15,65 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/braintree_ios_spm/issues"
+    "url": "https://github.com/MichaelLedger/braintree_ios_spm/issues"
   },
-  "homepage": "https://github.com/yourusername/braintree_ios_spm#readme",
+  "homepage": "https://github.com/MichaelLedger/braintree_ios_spm#readme",
   "braintree": {
-    "version": "6.34.0",
-    "url": "https://github.com/braintree/braintree_ios/releases/download/6.34.0/Braintree.xcframework.zip",
-    "mainChecksum": "55343f52ac4fb968137134fe0d7a930dfc8591717cb6eaad1fc00f225cccab2d",
+    "version": "6.32.0",
+    "url": "https://github.com/braintree/braintree_ios/releases/download/6.32.0/Braintree.xcframework.zip",
+    "mainChecksum": "981ff21b963a908002b05a1eb9288f597bfac1b1cc4012681beaa2f0285f5722",
     "frameworks": [
       {
         "name": "BraintreeAmericanExpress",
-        "checksum": "ae3477d246244c39058a7eca88f08c1503efdd06ec3bb3f82c9c1660643bd819"
+        "checksum": "eada2597ca6471450377d5023734caa09b08903a6839f0d0598c09cf34963909"
       },
       {
         "name": "BraintreeApplePay",
-        "checksum": "0dadda7939471e3214743c9f2204e58440a8c28888cabf5951a11b78bef4a869"
+        "checksum": "cda9827289d99fbff6b9a0a53bae2a9838f79d948c2b3a46fb81c6e706926654"
       },
       {
         "name": "BraintreeCard",
-        "checksum": "0f13eb40385e31333a7ca56fe9c21aaddef865ec67bef2135770417c460fc95d"
+        "checksum": "f6c6c46f136659b52952cd12daa2b0a9ef0f94715a69e46cd335d43dd78bc468"
       },
       {
         "name": "BraintreeCore",
-        "checksum": "736e04fc6d66c69b9a92b7ad5b705131b2d91dbadbd36fc83992b45f949992b8"
+        "checksum": "08099d0cb7645440471e40e9b45a1ecfb9aa91980da37f24a3b204fda3487c59"
       },
       {
         "name": "BraintreeDataCollector",
-        "checksum": "3da67bd34b1f9dd269f7521005bcb9c0f85f90d23b6b84dd836a41b46bb334aa"
+        "checksum": "238bee04e8978c652cf180ad3f658bcc51b20eba37f157ac80e4bfc4bfe5c02c"
       },
       {
         "name": "BraintreeLocalPayment",
-        "checksum": "d1bdb579987a6bafa4f3347a4a2b1f438f2a6a66c1c1ea95d921d15ff099c74d"
+        "checksum": "c56616c16d3bbc0b92276a8bdc5688d7a649f08f633ba025f16d73e366d7cf5e"
       },
       {
         "name": "BraintreePayPal",
-        "checksum": "7b265da10c344a8c26e2685403db1daaf311912af305be18be2ae4644617c459"
+        "checksum": "8e306c646fd86c12163491ab3f920f0353bdb0172cc993e82d55ee20a49cb3ba"
       },
       {
         "name": "BraintreePayPalMessaging",
-        "checksum": "2fe0483c47da507f91670942257fda0cd7beccc6c72eb507699aadb856c354c4"
+        "checksum": "043f60b42bca69c3274651ba166e9bb07076d9ab258bdfbf944bc754108d94d7"
       },
       {
         "name": "BraintreePayPalNativeCheckout",
-        "checksum": "cf51ee9d32f1612ed7ef26bbdc2f89048e9e54291fd13891b6dcc5cca7c6b01c"
+        "checksum": "3186cdc7339e2fa4ad91a4e746919b1fa04fc25676d9c95b1e97ec85f1e65238"
       },
       {
         "name": "BraintreeSEPADirectDebit",
-        "checksum": "81c2b6cc48bf034292501c442ca49ab7e09ea06142568ea2df6aa968386d527b"
+        "checksum": "3ae4320be1135d50b132c21d5358f2a8e3f30ea00034c085a47e78e258cf9273"
       },
       {
         "name": "BraintreeShopperInsights",
-        "checksum": "be968ea39c996865d27a4399bbb438510542f272d8823b49eb5fb781846a6af6"
+        "checksum": "612ee6c5249ecef10ea5afec277d2ec29ca328793f8bb094be4ce811d86d60e6"
       },
       {
         "name": "BraintreeThreeDSecure",
-        "checksum": "83a9eaa685465d6b0dfc0d79e011a286962ce113f726e08ccb291c4bc15f1274"
+        "checksum": "a82a8f3f1106e999ef48d19bfb8fd40c0a84e8dfca4963d849aac6d59eae3edd"
       },
       {
         "name": "BraintreeVenmo",
-        "checksum": "58a8cae45bc44af117ff456b12238c1f2c7091400643c6dea1a3a7c71bd36afa"
+        "checksum": "a38f5fe0ae8883e488a263285d3d537bc6c205aecd6951f73ce353ad07e207aa"
       },
       {
         "name": "CardinalMobile",
