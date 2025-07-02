@@ -93,7 +93,9 @@ let package = Package(
                 "BraintreeDataCollector",
                 "BraintreeThreeDSecure",
                 "BraintreeLocalPayment",
-                "BraintreeSEPADirectDebit"
+                "BraintreeSEPADirectDebit",
+                "CardinalMobile",
+                "PPRiskMagnes"
             ]
         ),
         // Required additional modules
