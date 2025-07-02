@@ -331,6 +331,18 @@ download_privacy_info() {
             touch "$workspace_dir/Sources/$dir/.gitkeep"
             # Copy PrivacyInfo file
             cp "$dir/PrivacyInfo.xcprivacy" "$workspace_dir/Sources/$dir/"
+            # Create dummy source file for SPM
+            echo "// This is a placeholder file to make SPM recognize this as a valid target
+// The actual implementation is in the binary framework
+
+#if canImport(ObjectiveC)
+import Foundation
+
+@objc
+public class ${dir}Placeholder: NSObject {
+    private override init() {}
+}
+#endif" > "$workspace_dir/Sources/$dir/Placeholder.swift"
         fi
     done
     cd - > /dev/null
