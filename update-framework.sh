@@ -315,37 +315,14 @@ download_privacy_info() {
     
     # The extracted folder will be named braintree_ios-{version}
     local src_dir="$temp_src/braintree_ios-$version"
-    
-    # Find and copy all PrivacyInfo files from Sources directory
-    echo "Copying PrivacyInfo files..."
     local workspace_dir="$PWD"
-    cd "$src_dir/Sources"
-    for dir in */; do
-        # Remove trailing slash from directory name
-        dir=${dir%/}
-        if [ -f "$dir/PrivacyInfo.xcprivacy" ]; then
-            echo "Found PrivacyInfo in $dir"
-            # Create target directory if it doesn't exist
-            mkdir -p "$workspace_dir/Sources/$dir"
-            # Create empty directory to ensure SPM can find it
-            touch "$workspace_dir/Sources/$dir/.gitkeep"
-            # Copy PrivacyInfo file
-            cp "$dir/PrivacyInfo.xcprivacy" "$workspace_dir/Sources/$dir/"
-            # Create dummy source file for SPM
-            echo "// This is a placeholder file to make SPM recognize this as a valid target
-// The actual implementation is in the binary framework
-
-#if canImport(ObjectiveC)
-import Foundation
-
-@objc
-public class ${dir}Placeholder: NSObject {
-    private override init() {}
-}
-#endif" > "$workspace_dir/Sources/$dir/Placeholder.swift"
-        fi
-    done
-    cd - > /dev/null
+    
+    # Copy entire Sources directory
+    echo "Copying source files..."
+    rm -rf "$workspace_dir/Sources"
+    mkdir -p "$workspace_dir/Sources"
+    cp -R "$src_dir/Sources/"* "$workspace_dir/Sources/"
+    echo "✅ Copied all source files"
     
     # Update Package-original.swift from source code
     echo "Updating Package-original.swift..."
@@ -360,10 +337,10 @@ public class ${dir}Placeholder: NSObject {
     rm -rf "$temp_zip" "$temp_src"
 }
 
-# Extract PrivacyInfo files from source code
+# Extract source files and PrivacyInfo files from source code
 download_privacy_info "$BRAINTREE_VERSION"
 
-echo "✅ PrivacyInfo files extraction complete"
+echo "✅ Source files extraction complete"
 
 # Final cleanup - remove entire temp directory
 echo "Cleaning up temporary files..."
