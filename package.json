@@ -25,55 +25,55 @@
     "frameworks": [
       {
         "name": "BraintreeAmericanExpress",
-        "checksum": "eada2597ca6471450377d5023734caa09b08903a6839f0d0598c09cf34963909"
+        "checksum": "56382fee8065d3f4dd5ae4a8b065f4a9808b5da21b12ef7905c218c0e24e6fc3"
       },
       {
         "name": "BraintreeApplePay",
-        "checksum": "cda9827289d99fbff6b9a0a53bae2a9838f79d948c2b3a46fb81c6e706926654"
+        "checksum": "07fdcc0b128bd38c1fe60a0b5ab8f3048358f52325fb28445df0b7743c1aeb3c"
       },
       {
         "name": "BraintreeCard",
-        "checksum": "f6c6c46f136659b52952cd12daa2b0a9ef0f94715a69e46cd335d43dd78bc468"
+        "checksum": "7dd3f52f41f065377518ecd45bd58e269ecb6b30cfaf83b20e5c4e1f013b7776"
       },
       {
         "name": "BraintreeCore",
-        "checksum": "08099d0cb7645440471e40e9b45a1ecfb9aa91980da37f24a3b204fda3487c59"
+        "checksum": "825405377456e2fa75e906377c92d95c0ae406988d6b36e0b5edddc6652baad3"
       },
       {
         "name": "BraintreeDataCollector",
-        "checksum": "238bee04e8978c652cf180ad3f658bcc51b20eba37f157ac80e4bfc4bfe5c02c"
+        "checksum": "118dba9e2030103427de0511ff157a61c7bf2f6fa67775030fe3cc864af8ac13"
       },
       {
         "name": "BraintreeLocalPayment",
-        "checksum": "c56616c16d3bbc0b92276a8bdc5688d7a649f08f633ba025f16d73e366d7cf5e"
+        "checksum": "ddd3544a2a217c16d87657f2af7b772c89a196b6d5e7fe50fefbb6a7f67a0a15"
       },
       {
         "name": "BraintreePayPal",
-        "checksum": "8e306c646fd86c12163491ab3f920f0353bdb0172cc993e82d55ee20a49cb3ba"
+        "checksum": "c2b40f768079da1102efaa35fb5caf3509b6b72ca0a15d6f8eaeb48e35ee5d9f"
       },
       {
         "name": "BraintreePayPalMessaging",
-        "checksum": "043f60b42bca69c3274651ba166e9bb07076d9ab258bdfbf944bc754108d94d7"
+        "checksum": "d3b0b5a7dad366740c1a510bd7b7c3decdf5af555917d15ad49e4e4d7db64a37"
       },
       {
         "name": "BraintreePayPalNativeCheckout",
-        "checksum": "3186cdc7339e2fa4ad91a4e746919b1fa04fc25676d9c95b1e97ec85f1e65238"
+        "checksum": "c5bec4f008cf5ac27de8677d82a72db77487e875230f4e4a7c4195e8880191d5"
       },
       {
         "name": "BraintreeSEPADirectDebit",
-        "checksum": "3ae4320be1135d50b132c21d5358f2a8e3f30ea00034c085a47e78e258cf9273"
+        "checksum": "d7e42e1df831e5d073ab58a2be339d0caa37bfb177e676be2972bac6a4929a99"
       },
       {
         "name": "BraintreeShopperInsights",
-        "checksum": "612ee6c5249ecef10ea5afec277d2ec29ca328793f8bb094be4ce811d86d60e6"
+        "checksum": "af693abcdfcb4e811fe4ae1ded05e456d7ef04e0975ed541bfc6acd8cd3aec3a"
       },
       {
         "name": "BraintreeThreeDSecure",
-        "checksum": "a82a8f3f1106e999ef48d19bfb8fd40c0a84e8dfca4963d849aac6d59eae3edd"
+        "checksum": "131117d804755bb60dc7c6339e7fb2fe4da6f48aabe7f864942cbca1fb4c510d"
       },
       {
         "name": "BraintreeVenmo",
-        "checksum": "a38f5fe0ae8883e488a263285d3d537bc6c205aecd6951f73ce353ad07e207aa"
+        "checksum": "002eb584d200dd30bd8dc4427a9321b8fe0b7aac26ec8b16715195e6ebe7c3d2"
       },
       {
         "name": "CardinalMobile",

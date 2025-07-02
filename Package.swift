@@ -135,25 +135,35 @@ let package = Package(
             name: "BraintreeApplePay",
             path: "XCFrameworkZips/BraintreeApplePay.xcframework.zip"
         ),
-        .binaryTarget(
+        .target(
             name: "BraintreeDataCollector",
-            path: "XCFrameworkZips/BraintreeDataCollector.xcframework.zip"
+            dependencies: ["BraintreeCore", "PPRiskMagnes"],
+            path: "Sources/BraintreeDataCollector",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
-        .binaryTarget(
+        .target(
             name: "BraintreeLocalPayment",
-            path: "XCFrameworkZips/BraintreeLocalPayment.xcframework.zip"
+            dependencies: ["BraintreeCore", "BraintreeDataCollector"],
+            path: "Sources/BraintreeLocalPayment",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
-        .binaryTarget(
+        .target(
             name: "BraintreePayPal",
-            path: "XCFrameworkZips/BraintreePayPal.xcframework.zip"
+            dependencies: ["BraintreeCore", "BraintreeDataCollector"],
+            path: "Sources/BraintreePayPal",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
-        .binaryTarget(
+        .target(
             name: "BraintreePayPalMessaging",
-            path: "XCFrameworkZips/BraintreePayPalMessaging.xcframework.zip"
+            dependencies: ["BraintreeCore", "PayPalMessages"],
+            path: "Sources/BraintreePayPalMessaging",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
-        .binaryTarget(
+        .target(
             name: "BraintreePayPalNativeCheckout",
-            path: "XCFrameworkZips/BraintreePayPalNativeCheckout.xcframework.zip"
+            dependencies: ["BraintreeCore", "BraintreePayPal", "PayPalCheckout"],
+            path: "Sources/BraintreePayPalNativeCheckout",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
         .binaryTarget(
             name: "BraintreeSEPADirectDebit",
@@ -163,9 +173,11 @@ let package = Package(
             name: "BraintreeShopperInsights",
             path: "XCFrameworkZips/BraintreeShopperInsights.xcframework.zip"
         ),
-        .binaryTarget(
+        .target(
             name: "BraintreeThreeDSecure",
-            path: "XCFrameworkZips/BraintreeThreeDSecure.xcframework.zip"
+            dependencies: ["BraintreeCard", "CardinalMobile", "PPRiskMagnes", "BraintreeCore"],
+            path: "Sources/BraintreeThreeDSecure",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
         .binaryTarget(
             name: "BraintreeVenmo",

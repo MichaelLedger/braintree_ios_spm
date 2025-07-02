@@ -267,8 +267,17 @@ if command -v node &> /dev/null; then
     fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2));
   "
   echo "Updated package.json with framework information"
+  
+  # Update package-lock.json
+  if command -v npm &> /dev/null; then
+    echo "Updating package-lock.json..."
+    npm install --package-lock-only
+    echo "✅ Updated package-lock.json"
+  else
+    echo "npm not found. Skipping package-lock.json update."
+  fi
 else
-  echo "Node.js not found. Skipping package.json update."
+  echo "Node.js not found. Skipping package.json and package-lock.json updates."
 fi
 
 # Update README
@@ -283,3 +292,68 @@ if [ "$NEED_REGENERATE" = true ] || [ "$FORCE_REGENERATE" = true ]; then
     rm -f $TEMP_DIR/Braintree.xcframework.zip
     echo "✅ Cleanup complete. Only zipped frameworks and XCFrameworks directory remain."
 fi 
+
+# Extract PrivacyInfo files from framework zips
+echo "Extracting PrivacyInfo files..."
+rm -rf Sources
+mkdir -p Sources
+
+# Download and extract PrivacyInfo files from source code
+download_privacy_info() {
+    local version=$1
+    local temp_zip="$TEMP_DIR/braintree_source.zip"
+    local temp_src="$TEMP_DIR/braintree_src"
+    local source_url="https://github.com/braintree/braintree_ios/archive/refs/tags/$version.zip"
+    
+    echo "Downloading Braintree source code from $source_url..."
+    curl -L "$source_url" -o "$temp_zip"
+    
+    echo "Extracting source code..."
+    rm -rf "$temp_src"
+    mkdir -p "$temp_src"
+    unzip -q "$temp_zip" -d "$temp_src"
+    
+    # The extracted folder will be named braintree_ios-{version}
+    local src_dir="$temp_src/braintree_ios-$version"
+    
+    # Find and copy all PrivacyInfo files from Sources directory
+    echo "Copying PrivacyInfo files..."
+    local workspace_dir="$PWD"
+    cd "$src_dir/Sources"
+    for dir in */; do
+        # Remove trailing slash from directory name
+        dir=${dir%/}
+        if [ -f "$dir/PrivacyInfo.xcprivacy" ]; then
+            echo "Found PrivacyInfo in $dir"
+            # Create target directory if it doesn't exist
+            mkdir -p "$workspace_dir/Sources/$dir"
+            # Create empty directory to ensure SPM can find it
+            touch "$workspace_dir/Sources/$dir/.gitkeep"
+            # Copy PrivacyInfo file
+            cp "$dir/PrivacyInfo.xcprivacy" "$workspace_dir/Sources/$dir/"
+        fi
+    done
+    cd - > /dev/null
+    
+    # Update Package-original.swift from source code
+    echo "Updating Package-original.swift..."
+    if [ -f "$src_dir/Package.swift" ]; then
+        cp "$src_dir/Package.swift" "$workspace_dir/Package-original.swift"
+        echo "✅ Updated Package-original.swift from source code"
+    else
+        echo "Warning: Package.swift not found in source code"
+    fi
+    
+    # Clean up
+    rm -rf "$temp_zip" "$temp_src"
+}
+
+# Extract PrivacyInfo files from source code
+download_privacy_info "$BRAINTREE_VERSION"
+
+echo "✅ PrivacyInfo files extraction complete"
+
+# Final cleanup - remove entire temp directory
+echo "Cleaning up temporary files..."
+rm -rf "$TEMP_DIR"
+echo "✅ Cleanup complete" 
