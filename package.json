@@ -1,6 +1,6 @@
 {
   "name": "braintree_ios_spm",
-  "version": "6.30.0",
+  "version": "6.34.0",
   "description": "Braintree iOS SDK Swift Package Manager distribution",
   "repository": {
     "type": "git",
@@ -19,61 +19,61 @@
   },
   "homepage": "https://github.com/yourusername/braintree_ios_spm#readme",
   "braintree": {
-    "version": "6.30.0",
-    "url": "https://github.com/braintree/braintree_ios/releases/download/6.30.0/Braintree.xcframework.zip",
-    "mainChecksum": "8957c69abebdec7c9a35e1bd72110775899f527d912320169cb319ee3c7971a1",
+    "version": "6.34.0",
+    "url": "https://github.com/braintree/braintree_ios/releases/download/6.34.0/Braintree.xcframework.zip",
+    "mainChecksum": "55343f52ac4fb968137134fe0d7a930dfc8591717cb6eaad1fc00f225cccab2d",
     "frameworks": [
       {
         "name": "BraintreeAmericanExpress",
-        "checksum": "dd7b86533442c7e4203c6fde045eb3b3b1d87ab594903feb92b938f95312f158"
+        "checksum": "ae3477d246244c39058a7eca88f08c1503efdd06ec3bb3f82c9c1660643bd819"
       },
       {
         "name": "BraintreeApplePay",
-        "checksum": "4a906c8ccf68cf8f90d8f7a500f968b1f7fafe20b65e32b07e79fb5857b4c9f1"
+        "checksum": "0dadda7939471e3214743c9f2204e58440a8c28888cabf5951a11b78bef4a869"
       },
       {
         "name": "BraintreeCard",
-        "checksum": "f7ef39d83f91b04f7ad07668451255deb6e7c9847ea257f14e78e640d3faeb19"
+        "checksum": "0f13eb40385e31333a7ca56fe9c21aaddef865ec67bef2135770417c460fc95d"
       },
       {
         "name": "BraintreeCore",
-        "checksum": "d280bbbfd037a8ddc29e2e52b885a0d49ea62153bab2b8a21d25019dad26dbd7"
+        "checksum": "736e04fc6d66c69b9a92b7ad5b705131b2d91dbadbd36fc83992b45f949992b8"
       },
       {
         "name": "BraintreeDataCollector",
-        "checksum": "d9891aa38e9da147cdce2e74fb64398d9c3ea711477720b4dd64a7b204fce7c0"
+        "checksum": "3da67bd34b1f9dd269f7521005bcb9c0f85f90d23b6b84dd836a41b46bb334aa"
       },
       {
         "name": "BraintreeLocalPayment",
-        "checksum": "44958a57320ad206b91898d6e9f8437ec2382087c70733854b39e8395230029e"
+        "checksum": "d1bdb579987a6bafa4f3347a4a2b1f438f2a6a66c1c1ea95d921d15ff099c74d"
       },
       {
         "name": "BraintreePayPal",
-        "checksum": "bf210c785b2b347190bb84454afddad3bd1fce77625bbf741efc1aff5dad8024"
+        "checksum": "7b265da10c344a8c26e2685403db1daaf311912af305be18be2ae4644617c459"
       },
       {
         "name": "BraintreePayPalMessaging",
-        "checksum": "d89c0a14b383cdd85212cfed9e7039dc0727e60989bc34442882222f9bc0e71a"
+        "checksum": "2fe0483c47da507f91670942257fda0cd7beccc6c72eb507699aadb856c354c4"
       },
       {
         "name": "BraintreePayPalNativeCheckout",
-        "checksum": "4ca167e9789ebec3db0326f766243ff29e6f846a3b6d4e49eee1af3eaa7daec0"
+        "checksum": "cf51ee9d32f1612ed7ef26bbdc2f89048e9e54291fd13891b6dcc5cca7c6b01c"
       },
       {
         "name": "BraintreeSEPADirectDebit",
-        "checksum": "52ebc6785d531a01ace403771eceb0771c3d678f1ae1cae29373e61f2c87da7b"
+        "checksum": "81c2b6cc48bf034292501c442ca49ab7e09ea06142568ea2df6aa968386d527b"
       },
       {
         "name": "BraintreeShopperInsights",
-        "checksum": "8c817a76eb41db35ec39fa30f1b8c146f0112f4918daeedb239e9313dbe4ea0d"
+        "checksum": "be968ea39c996865d27a4399bbb438510542f272d8823b49eb5fb781846a6af6"
       },
       {
         "name": "BraintreeThreeDSecure",
-        "checksum": "384a0bbcc93c66fbca53f49c9214b2636da3fa8c8018f5ff0f48515aa5857382"
+        "checksum": "83a9eaa685465d6b0dfc0d79e011a286962ce113f726e08ccb291c4bc15f1274"
       },
       {
         "name": "BraintreeVenmo",
-        "checksum": "51b1cf88bd662d320ebff0258f532ad90874b10959be774918c6124e4fc258bf"
+        "checksum": "58a8cae45bc44af117ff456b12238c1f2c7091400643c6dea1a3a7c71bd36afa"
       },
       {
         "name": "CardinalMobile",
