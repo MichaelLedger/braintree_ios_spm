@@ -173,6 +173,15 @@ mkdir -p "$workspace_dir/Sources"
 cp -R "$src_dir/Sources/"* "$workspace_dir/Sources/"
 echo "✅ Copied all source files"
 
+# Copy LICENSE file
+echo "Copying LICENSE file..."
+if [ -f "$src_dir/LICENSE" ]; then
+    cp "$src_dir/LICENSE" "$workspace_dir/LICENSE"
+    echo "✅ Copied LICENSE file"
+else
+    echo "Warning: LICENSE file not found in source code"
+fi
+
 # Copy XCFrameworks directory
 echo "Copying XCFrameworks directory..."
 rm -rf "$workspace_dir/Frameworks/XCFrameworks"
