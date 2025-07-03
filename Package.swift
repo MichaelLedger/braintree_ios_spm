@@ -37,11 +37,11 @@ let package = Package(
         ),
         .library(
             name: "BraintreePayPalMessaging",
-            targets: ["BraintreePayPalMessaging", "PayPalMessages"]
+            targets: ["BraintreePayPalMessaging"]
         ),
         .library(
             name: "BraintreePayPalNativeCheckout",
-            targets: ["BraintreePayPalNativeCheckout", "PayPalCheckout"]
+            targets: ["BraintreePayPalNativeCheckout"]
         ),
         .library(
             name: "BraintreeSEPADirectDebit",
@@ -58,29 +58,6 @@ let package = Package(
         .library(
             name: "BraintreeVenmo",
             targets: ["BraintreeVenmo"]
-        ),
-        // Complete SDK
-        .library(
-            name: "Braintree", 
-            targets: [
-                "BraintreeCore",
-                "BraintreeCard",
-                "BraintreePayPal",
-                "BraintreeApplePay",
-                "BraintreeDataCollector",
-                "BraintreeThreeDSecure",
-                "BraintreeVenmo",
-                "BraintreeLocalPayment",
-                "BraintreeAmericanExpress",
-                "BraintreePayPalMessaging",
-                "BraintreePayPalNativeCheckout",
-                "BraintreeSEPADirectDebit",
-                "BraintreeShopperInsights",
-                "CardinalMobile",
-                "PPRiskMagnes",
-                "PayPalMessages",
-                "PayPalCheckout"
-            ]
         ),
         // Complete SDK for FreePrints
         .library(
