@@ -66,178 +66,6 @@ echo "Requested Braintree SDK version: $BRAINTREE_VERSION"
 # Create directories if they don't exist
 mkdir -p $XCFRAMEWORK_DIR $TEMP_DIR $ZIP_DIR
 
-# Download and extract source code first
-download_privacy_info() {
-    local version=$1
-    local temp_zip="$TEMP_DIR/braintree_source.zip"
-    local temp_src="$TEMP_DIR/braintree_src"
-    local source_url="https://github.com/braintree/braintree_ios/archive/refs/tags/$version.zip"
-    
-    echo "Downloading Braintree source code from $source_url..."
-    curl -L "$source_url" -o "$temp_zip"
-    
-    echo "Extracting source code..."
-    rm -rf "$temp_src"
-    mkdir -p "$temp_src"
-    unzip -q "$temp_zip" -d "$temp_src"
-    
-    # The extracted folder will be named braintree_ios-{version}
-    local src_dir="$temp_src/braintree_ios-$version"
-    local workspace_dir="$PWD"
-    
-    # Copy entire Sources directory
-    echo "Copying source files..."
-    rm -rf "$workspace_dir/Sources"
-    mkdir -p "$workspace_dir/Sources"
-    cp -R "$src_dir/Sources/"* "$workspace_dir/Sources/"
-    echo "✅ Copied all source files"
-    
-    # Copy XCFrameworks directory
-    echo "Copying XCFrameworks directory..."
-    rm -rf "$workspace_dir/Frameworks/XCFrameworks"
-    mkdir -p "$workspace_dir/Frameworks"
-    if [ -d "$src_dir/Frameworks/XCFrameworks" ]; then
-        cp -R "$src_dir/Frameworks/XCFrameworks" "$workspace_dir/Frameworks/"
-        echo "✅ Copied XCFrameworks directory"
-    else
-        echo "Warning: XCFrameworks directory not found in source code"
-    fi
-    
-    # Update Package-original.swift from source code
-    echo "Updating Package-original.swift..."
-    if [ -f "$src_dir/Package.swift" ]; then
-        cp "$src_dir/Package.swift" "$workspace_dir/Package-original.swift"
-        echo "✅ Updated Package-original.swift from source code"
-        
-        # Extract PayPal frameworks configuration
-        echo "Extracting PayPal frameworks configuration..."
-        
-        # Extract PayPalMessages config
-        PAYPAL_MESSAGES_CONFIG=$(extract_paypal_config "$workspace_dir/Package-original.swift" "PayPalMessages")
-        PAYPAL_MESSAGES_URL=$(echo "$PAYPAL_MESSAGES_CONFIG" | cut -d'|' -f2)
-        PAYPAL_MESSAGES_CHECKSUM=$(echo "$PAYPAL_MESSAGES_CONFIG" | cut -d'|' -f3)
-        
-        # Extract PayPalCheckout config
-        PAYPAL_CHECKOUT_CONFIG=$(extract_paypal_config "$workspace_dir/Package-original.swift" "PayPalCheckout")
-        PAYPAL_CHECKOUT_URL=$(echo "$PAYPAL_CHECKOUT_CONFIG" | cut -d'|' -f2)
-        PAYPAL_CHECKOUT_CHECKSUM=$(echo "$PAYPAL_CHECKOUT_CONFIG" | cut -d'|' -f3)
-        
-        echo "✅ Extracted PayPal frameworks configuration"
-        
-        # Update products section in Package.swift
-        echo "Updating products in Package.swift..."
-        
-        # Create temporary files
-        local temp_products="$workspace_dir/products.tmp"
-        local temp_package="$workspace_dir/Package.swift.tmp"
-        local temp_no_products="$workspace_dir/no_products.tmp"
-        
-        # Extract products section from Package-original.swift
-        sed -n '/products: \[/,/\],/p' "$workspace_dir/Package-original.swift" > "$temp_products"
-        
-        if [ -s "$temp_products" ]; then
-            # Remove old products section from Package.swift
-            echo "Removing old products section..."
-            # Get everything before products section
-            sed -n '1,/products: \[/p' "$workspace_dir/Package.swift" | sed '$d' > "$temp_no_products"
-            # Get everything after products section
-            sed -n '/\],/,$p' "$workspace_dir/Package.swift" | sed '1d' >> "$temp_no_products"
-            
-            # Create new Package.swift with updated products
-            echo "Adding new products section..."
-            
-            # Copy everything up to products section
-            sed -n '1,/products: \[/p' "$temp_no_products" | sed '$d' > "$temp_package"
-            
-            # Add the new products section but remove the last line (closing bracket)
-            sed '$d' "$temp_products" >> "$temp_package"
-            
-            # Check if last line ends with comma
-            last_line=$(tail -n 1 "$temp_package")
-            if [[ "$last_line" != *"," ]]; then
-                echo "," >> "$temp_package"
-            fi
-            
-            # Add FreePrints and additional modules to products
-            echo '        // Complete SDK for FreePrints
-        .library(
-            name: "BraintreeFreePrints",
-            targets: [
-                "BraintreeCore",
-                "BraintreeCard",
-                "BraintreePayPal",
-                "BraintreeApplePay",
-                "BraintreeDataCollector",
-                "BraintreeThreeDSecure",
-                "BraintreeLocalPayment",
-                "BraintreeSEPADirectDebit",
-                "CardinalMobile",
-                "PPRiskMagnes"
-            ]
-        ),
-        // Required additional modules
-        .library(
-            name: "CardinalMobile",
-            targets: ["CardinalMobile"]
-        ),
-        .library(
-            name: "PPRiskMagnes",
-            targets: ["PPRiskMagnes"]
-        ),
-        .library(
-            name: "PayPalMessages",
-            targets: ["PayPalMessages"]
-        ),
-        .library(
-            name: "PayPalCheckout",
-            targets: ["PayPalCheckout"]
-        )
-    ],' >> "$temp_package"
-            
-            # Add everything after products section
-            sed -n '/dependencies: \[/,$p' "$temp_no_products" >> "$temp_package"
-            
-            if [ -s "$temp_package" ]; then
-                mv "$temp_package" "$workspace_dir/Package.swift"
-                echo "✅ Updated products in Package.swift"
-            else
-                echo "Warning: Failed to create updated Package.swift"
-            fi
-        else
-            echo "Warning: Could not extract products section from Package-original.swift"
-        fi
-        
-        # Clean up temporary files
-        rm -f "$temp_products" "$temp_package" "$temp_no_products"
-    else
-        echo "Warning: Package.swift not found in source code"
-        exit 1
-    fi
-    
-    # Clean up
-    rm -rf "$temp_zip" "$temp_src"
-}
-
-# Download source code and extract configurations first
-echo "Downloading source code and extracting configurations..."
-download_privacy_info "$BRAINTREE_VERSION"
-
-# Check if version has changed
-CURRENT_VERSION=""
-VERSION_CHANGED=false
-if [ -f "package.json" ]; then
-    if command -v node &> /dev/null; then
-        CURRENT_VERSION=$(node -e "try { const pkg = require('./package.json'); console.log(pkg.braintree?.version || ''); } catch(e) { console.log(''); }")
-    else
-        # Fallback to grep if node is not available
-        CURRENT_VERSION=$(grep -o '"version": "[^"]*"' package.json | head -1 | cut -d'"' -f4)
-    fi
-fi
-
-if [ "$CURRENT_VERSION" != "$BRAINTREE_VERSION" ]; then
-    VERSION_CHANGED=true
-fi
-
 # Check if zips exist first
 NEED_REGENERATE=false
 MISSING_ZIPS=false
@@ -303,7 +131,154 @@ ADDITIONAL_FRAMEWORKS=(
     "PPRiskMagnes"
 )
 
-# If we need to regenerate, download and extract the frameworks
+# Download source code once and use it for both PrivacyInfo and framework generation
+echo "Downloading Braintree source code..."
+temp_zip="$TEMP_DIR/braintree_source.zip"
+temp_src="$TEMP_DIR/braintree_src"
+source_url="https://github.com/braintree/braintree_ios/archive/refs/tags/$BRAINTREE_VERSION.zip"
+
+echo "Downloading from $source_url"
+curl -L "$source_url" -o "$temp_zip"
+
+echo "Extracting source code..."
+rm -rf "$temp_src"
+mkdir -p "$temp_src"
+unzip -q "$temp_zip" -d "$temp_src"
+
+# The extracted folder will be named braintree_ios-{version}
+src_dir="$temp_src/braintree_ios-$BRAINTREE_VERSION"
+workspace_dir="$PWD"
+
+# Copy entire Sources directory
+echo "Copying source files..."
+rm -rf "$workspace_dir/Sources"
+mkdir -p "$workspace_dir/Sources"
+cp -R "$src_dir/Sources/"* "$workspace_dir/Sources/"
+echo "✅ Copied all source files"
+
+# Copy XCFrameworks directory
+echo "Copying XCFrameworks directory..."
+rm -rf "$workspace_dir/Frameworks/XCFrameworks"
+mkdir -p "$workspace_dir/Frameworks"
+if [ -d "$src_dir/Frameworks/XCFrameworks" ]; then
+    cp -R "$src_dir/Frameworks/XCFrameworks" "$workspace_dir/Frameworks/"
+    echo "✅ Copied XCFrameworks directory"
+else
+    echo "Warning: XCFrameworks directory not found in source code"
+fi
+
+# Update Package-original.swift from source code
+echo "Updating Package-original.swift..."
+if [ -f "$src_dir/Package.swift" ]; then
+    cp "$src_dir/Package.swift" "$workspace_dir/Package-original.swift"
+    echo "✅ Updated Package-original.swift from source code"
+    
+    # Extract PayPal frameworks configuration
+    echo "Extracting PayPal frameworks configuration..."
+    
+    # Extract PayPalMessages config
+    PAYPAL_MESSAGES_CONFIG=$(extract_paypal_config "$workspace_dir/Package-original.swift" "PayPalMessages")
+    PAYPAL_MESSAGES_URL=$(echo "$PAYPAL_MESSAGES_CONFIG" | cut -d'|' -f2)
+    PAYPAL_MESSAGES_CHECKSUM=$(echo "$PAYPAL_MESSAGES_CONFIG" | cut -d'|' -f3)
+    
+    # Extract PayPalCheckout config
+    PAYPAL_CHECKOUT_CONFIG=$(extract_paypal_config "$workspace_dir/Package-original.swift" "PayPalCheckout")
+    PAYPAL_CHECKOUT_URL=$(echo "$PAYPAL_CHECKOUT_CONFIG" | cut -d'|' -f2)
+    PAYPAL_CHECKOUT_CHECKSUM=$(echo "$PAYPAL_CHECKOUT_CONFIG" | cut -d'|' -f3)
+    
+    echo "✅ Extracted PayPal frameworks configuration"
+    
+    # Update products section in Package.swift
+    echo "Updating products in Package.swift..."
+    
+    # Create temporary files
+    temp_products="$workspace_dir/products.tmp"
+    temp_package="$workspace_dir/Package.swift.tmp"
+    temp_no_products="$workspace_dir/no_products.tmp"
+    
+    # Extract products section from Package-original.swift
+    sed -n '/products: \[/,/\],/p' "$workspace_dir/Package-original.swift" > "$temp_products"
+    
+    if [ -s "$temp_products" ]; then
+        # Remove old products section from Package.swift
+        echo "Removing old products section..."
+        # Get everything before products section
+        sed -n '1,/products: \[/p' "$workspace_dir/Package.swift" | sed '$d' > "$temp_no_products"
+        # Get everything after products section
+        sed -n '/\],/,$p' "$workspace_dir/Package.swift" | sed '1d' >> "$temp_no_products"
+        
+        # Create new Package.swift with updated products
+        echo "Adding new products section..."
+        
+        # Copy everything up to products section
+        sed -n '1,/products: \[/p' "$temp_no_products" | sed '$d' > "$temp_package"
+        
+        # Add the new products section but remove the last line (closing bracket)
+        sed '$d' "$temp_products" >> "$temp_package"
+        
+        # Check if last line ends with comma
+        last_line=$(tail -n 1 "$temp_package")
+        if [[ "$last_line" != *"," ]]; then
+            echo "," >> "$temp_package"
+        fi
+        
+        # Add FreePrints and additional modules to products
+        echo '        // Complete SDK for FreePrints
+        .library(
+            name: "BraintreeFreePrints",
+            targets: [
+                "BraintreeCore",
+                "BraintreeCard",
+                "BraintreePayPal",
+                "BraintreeApplePay",
+                "BraintreeDataCollector",
+                "BraintreeThreeDSecure",
+                "BraintreeLocalPayment",
+                "BraintreeSEPADirectDebit",
+                "CardinalMobile",
+                "PPRiskMagnes"
+            ]
+        ),
+        // Required additional modules
+        .library(
+            name: "CardinalMobile",
+            targets: ["CardinalMobile"]
+        ),
+        .library(
+            name: "PPRiskMagnes",
+            targets: ["PPRiskMagnes"]
+        ),
+        .library(
+            name: "PayPalMessages",
+            targets: ["PayPalMessages"]
+        ),
+        .library(
+            name: "PayPalCheckout",
+            targets: ["PayPalCheckout"]
+        )
+    ],' >> "$temp_package"
+        
+        # Add everything after products section
+        sed -n '/dependencies: \[/,$p' "$temp_no_products" >> "$temp_package"
+        
+        if [ -s "$temp_package" ]; then
+            mv "$temp_package" "$workspace_dir/Package.swift"
+            echo "✅ Updated products in Package.swift"
+        else
+            echo "Warning: Failed to create updated Package.swift"
+        fi
+    else
+        echo "Warning: Could not extract products section from Package-original.swift"
+    fi
+    
+    # Clean up temporary files
+    rm -f "$temp_products" "$temp_package" "$temp_no_products"
+else
+    echo "Warning: Package.swift not found in source code"
+    exit 1
+fi
+
+# If we need to regenerate, use the already downloaded source code
 if [ "$NEED_REGENERATE" = true ] || [ "$FORCE_REGENERATE" = true ]; then
     echo "Will regenerate framework zips."
     
@@ -454,16 +429,6 @@ if [ "$NEED_REGENERATE" = true ] || [ "$FORCE_REGENERATE" = true ]; then
     rm -f $TEMP_DIR/Braintree.xcframework.zip
     echo "✅ Cleanup complete. Only zipped frameworks and XCFrameworks directory remain."
 fi 
-
-# Extract PrivacyInfo files from framework zips
-echo "Extracting PrivacyInfo files..."
-rm -rf Sources
-mkdir -p Sources
-
-# Extract source files and PrivacyInfo files from source code
-download_privacy_info "$BRAINTREE_VERSION"
-
-echo "✅ Source files extraction complete"
 
 # Final cleanup - remove entire temp directory
 echo "Cleaning up temporary files..."
