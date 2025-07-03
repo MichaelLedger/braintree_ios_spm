@@ -25,75 +25,73 @@
     "frameworks": [
       {
         "name": "BraintreeAmericanExpress",
-        "checksum": "56382fee8065d3f4dd5ae4a8b065f4a9808b5da21b12ef7905c218c0e24e6fc3"
+        "checksum": "6e243ec3dd73cefd12c0f3f995df684e996e7c5135249eb30656b6b4d619815b"
       },
       {
         "name": "BraintreeApplePay",
-        "checksum": "07fdcc0b128bd38c1fe60a0b5ab8f3048358f52325fb28445df0b7743c1aeb3c"
+        "checksum": "1a236b0f3a7b74b29914071e03b75b10bc575fabd4ee88014d664e7016eb6a4b"
       },
       {
         "name": "BraintreeCard",
-        "checksum": "7dd3f52f41f065377518ecd45bd58e269ecb6b30cfaf83b20e5c4e1f013b7776"
+        "checksum": "baeaef730fd5d0960072f74a2fdfa7d02f3ada24919a350c6649dc368d65aac8"
       },
       {
         "name": "BraintreeCore",
-        "checksum": "825405377456e2fa75e906377c92d95c0ae406988d6b36e0b5edddc6652baad3"
+        "checksum": "68a128e8f63164a32e1ee896a4674862ca72432b8a3e21f0e412d9404f346f0c"
       },
       {
         "name": "BraintreeDataCollector",
-        "checksum": "118dba9e2030103427de0511ff157a61c7bf2f6fa67775030fe3cc864af8ac13"
+        "checksum": "5fbf6365f2d19729bff5c53f45e4a4e29d2ff4ca5a375f3934ff3d0ed85b1050"
       },
       {
         "name": "BraintreeLocalPayment",
-        "checksum": "ddd3544a2a217c16d87657f2af7b772c89a196b6d5e7fe50fefbb6a7f67a0a15"
+        "checksum": "7c5fa77db629ba3a7c5461ed09944ab29053f7fca641591275e239f38d4ed85f"
       },
       {
         "name": "BraintreePayPal",
-        "checksum": "c2b40f768079da1102efaa35fb5caf3509b6b72ca0a15d6f8eaeb48e35ee5d9f"
+        "checksum": "478788fe236fae8747071e9c9454f2cf4d288c80094c01831f995ee1d899003e"
       },
       {
         "name": "BraintreePayPalMessaging",
-        "checksum": "d3b0b5a7dad366740c1a510bd7b7c3decdf5af555917d15ad49e4e4d7db64a37"
+        "checksum": "773b37994d4a2959d07f8ef16a9ae2a8a9dde70fda6dc7c90ceac7d789d3e850"
       },
       {
         "name": "BraintreePayPalNativeCheckout",
-        "checksum": "c5bec4f008cf5ac27de8677d82a72db77487e875230f4e4a7c4195e8880191d5"
+        "checksum": "6b2817e8d8cc792743e9758348b0f27e14ba40e750aaef816d87aaa9b9d3e513"
       },
       {
         "name": "BraintreeSEPADirectDebit",
-        "checksum": "d7e42e1df831e5d073ab58a2be339d0caa37bfb177e676be2972bac6a4929a99"
+        "checksum": "6c925107f0d7f1d8ddb8dd25eb7ef3d87f07df3640cdc7e2fab03ecb83c73783"
       },
       {
         "name": "BraintreeShopperInsights",
-        "checksum": "af693abcdfcb4e811fe4ae1ded05e456d7ef04e0975ed541bfc6acd8cd3aec3a"
+        "checksum": "13e49d81e9c04b4f2764a39f8ab19ce167b87ae6685fa934ec15225555669f71"
       },
       {
         "name": "BraintreeThreeDSecure",
-        "checksum": "131117d804755bb60dc7c6339e7fb2fe4da6f48aabe7f864942cbca1fb4c510d"
+        "checksum": "97fedd82cc8ffc43dde35cbf51875caa76ab640745f19e03673436cb3ee5bcaa"
       },
       {
         "name": "BraintreeVenmo",
-        "checksum": "002eb584d200dd30bd8dc4427a9321b8fe0b7aac26ec8b16715195e6ebe7c3d2"
+        "checksum": "e73199b58747a5677d4fce1800594fd799a2cbf2e3ce8dfb0ee2f7c48300421c"
       },
       {
         "name": "CardinalMobile",
-        "checksum": "9fa0aa696c14e145b3cdd6bf147bdf43a89f490e6cd6540cbf5aa210cb5cc9c4"
+        "checksum": "1c786f6f99dc7bf12dd984da9206eb365691b1f7d27b79a002070475bc5aaf9e"
       },
       {
         "name": "PPRiskMagnes",
-        "checksum": "0145ef2ccdb73ab5fde5e83c19a54856cf3ca571bf7d29f8cddae460694b1666"
+        "checksum": "2725a8bced0409bd4359c967667f47f220ea3078c6b9503a6f84dffc47057106"
       },
       {
         "name": "PayPalMessages",
         "checksum": "565ab72a3ab75169e41685b16e43268a39e24217a12a641155961d8b10ffe1b4",
-        "url": "https://github.com/paypal/paypal-messages-ios/releases/download/1.0.0/PayPalMessages.xcframework.zip",
-        "version": "1.0.0"
+        "url": "https://github.com/paypal/paypal-messages-ios/releases/download/1.0.0/PayPalMessages.xcframework.zip"
       },
       {
         "name": "PayPalCheckout",
         "checksum": "d65186f38f390cb9ae0431ecacf726774f7f89f5474c48244a07d17b248aa035",
-        "url": "https://github.com/paypal/paypalcheckout-ios/releases/download/1.3.0/PayPalCheckout.xcframework.zip",
-        "version": "1.3.0"
+        "url": "https://github.com/paypal/paypalcheckout-ios/releases/download/1.3.0/PayPalCheckout.xcframework.zip"
       }
     ]
   }
