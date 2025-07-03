@@ -238,44 +238,46 @@ if [ "$CURRENT_VERSION" != "$BRAINTREE_VERSION" ]; then
     VERSION_CHANGED=true
 fi
 
-# Get existing checksums from package.json if version hasn't changed and not forcing regeneration
-NEED_REGENERATE=true
-EXISTING_CHECKSUMS_JSON=""
+# Check if zips exist first
+NEED_REGENERATE=false
+MISSING_ZIPS=false
+for framework in "${FRAMEWORKS[@]}"; do
+    if [ ! -f "$ZIP_DIR/$framework.xcframework.zip" ]; then
+        MISSING_ZIPS=true
+        echo "Missing zip file: $framework.xcframework.zip"
+    fi
+done
 
-if [ "$VERSION_CHANGED" = false ] && [ "$FORCE_REGENERATE" = false ]; then
+for framework in "${ADDITIONAL_FRAMEWORKS[@]}"; do
+    if [ ! -f "$ZIP_DIR/$framework.xcframework.zip" ]; then
+        MISSING_ZIPS=true
+        echo "Missing zip file: $framework.xcframework.zip"
+    fi
+done
+
+if [ "$MISSING_ZIPS" = true ]; then
+    echo "Some framework zips are missing. Will regenerate all zips."
+    NEED_REGENERATE=true
+fi
+
+# Only check version and force flag if we don't need to regenerate due to missing files
+if [ "$NEED_REGENERATE" = false ] && [ "$VERSION_CHANGED" = false ] && [ "$FORCE_REGENERATE" = false ]; then
     echo "Current version is already $BRAINTREE_VERSION."
     
-    # Check if zips exist
-    MISSING_ZIPS=false
-    for framework in "${FRAMEWORKS[@]}"; do
-        if [ ! -f "$ZIP_DIR/$framework.xcframework.zip" ]; then
-            MISSING_ZIPS=true
-            echo "Missing zip file: $framework.xcframework.zip"
-        fi
-    done
-    
-    for framework in "${ADDITIONAL_FRAMEWORKS[@]}"; do
-        if [ ! -f "$ZIP_DIR/$framework.xcframework.zip" ]; then
-            MISSING_ZIPS=true
-            echo "Missing zip file: $framework.xcframework.zip"
-        fi
-    done
-    
-    if [ "$MISSING_ZIPS" = true ]; then
-        echo "Some framework zips are missing. Will regenerate all zips."
-    else
-        # Use existing checksums from package.json
-        if command -v node &> /dev/null; then
-            EXISTING_CHECKSUMS_JSON=$(node -e "try { const pkg = require('./package.json'); console.log(JSON.stringify(pkg.braintree?.frameworks || [])); } catch(e) { console.log('[]'); }")
-            MAIN_CHECKSUM=$(node -e "try { const pkg = require('./package.json'); console.log(pkg.braintree?.mainChecksum || ''); } catch(e) { console.log(''); }")
-            
-            # Check if we have valid existing checksums
-            if [ "$EXISTING_CHECKSUMS_JSON" != "[]" ] && [ -n "$MAIN_CHECKSUM" ]; then
-                NEED_REGENERATE=false
-                echo "Using existing framework zips and checksums."
-            fi
+    # Use existing checksums from package.json
+    if command -v node &> /dev/null; then
+        EXISTING_CHECKSUMS_JSON=$(node -e "try { const pkg = require('./package.json'); console.log(JSON.stringify(pkg.braintree?.frameworks || [])); } catch(e) { console.log('[]'); }")
+        MAIN_CHECKSUM=$(node -e "try { const pkg = require('./package.json'); console.log(pkg.braintree?.mainChecksum || ''); } catch(e) { console.log(''); }")
+        
+        # Check if we have valid existing checksums
+        if [ "$EXISTING_CHECKSUMS_JSON" != "[]" ] && [ -n "$MAIN_CHECKSUM" ]; then
+            echo "Using existing framework zips and checksums."
+        else
+            NEED_REGENERATE=true
         fi
     fi
+else
+    NEED_REGENERATE=true
 fi
 
 # List of frameworks to zip from Carthage/Build
