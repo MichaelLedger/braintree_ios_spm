@@ -329,6 +329,92 @@ download_privacy_info() {
     if [ -f "$src_dir/Package.swift" ]; then
         cp "$src_dir/Package.swift" "$workspace_dir/Package-original.swift"
         echo "✅ Updated Package-original.swift from source code"
+        
+        # Update products section in Package.swift
+        echo "Updating products in Package.swift..."
+        
+        # Create temporary files
+        local temp_products="$workspace_dir/products.tmp"
+        local temp_package="$workspace_dir/Package.swift.tmp"
+        local temp_no_products="$workspace_dir/no_products.tmp"
+        
+        # Extract products section from Package-original.swift
+        sed -n '/products: \[/,/\],/p' "$workspace_dir/Package-original.swift" > "$temp_products"
+        
+        if [ -s "$temp_products" ]; then
+            # Remove old products section from Package.swift
+            echo "Removing old products section..."
+            # Get everything before products section
+            sed -n '1,/products: \[/p' "$workspace_dir/Package.swift" | sed '$d' > "$temp_no_products"
+            # Get everything after products section
+            sed -n '/\],/,$p' "$workspace_dir/Package.swift" | sed '1d' >> "$temp_no_products"
+            
+            # Create new Package.swift with updated products
+            echo "Adding new products section..."
+            
+            # Copy everything up to products section
+            sed -n '1,/products: \[/p' "$temp_no_products" | sed '$d' > "$temp_package"
+            
+            # Add the new products section but remove the last line (closing bracket)
+            sed '$d' "$temp_products" >> "$temp_package"
+            
+            # Check if last line ends with comma
+            last_line=$(tail -n 1 "$temp_package")
+            if [[ "$last_line" != *"," ]]; then
+                echo "," >> "$temp_package"
+            fi
+            
+            # Add FreePrints and additional modules to products
+            echo '        // Complete SDK for FreePrints
+        .library(
+            name: "BraintreeFreePrints",
+            targets: [
+                "BraintreeCore",
+                "BraintreeCard",
+                "BraintreePayPal",
+                "BraintreeApplePay",
+                "BraintreeDataCollector",
+                "BraintreeThreeDSecure",
+                "BraintreeLocalPayment",
+                "BraintreeSEPADirectDebit",
+                "CardinalMobile",
+                "PPRiskMagnes"
+            ]
+        ),
+        // Required additional modules
+        .library(
+            name: "CardinalMobile",
+            targets: ["CardinalMobile"]
+        ),
+        .library(
+            name: "PPRiskMagnes",
+            targets: ["PPRiskMagnes"]
+        ),
+        .library(
+            name: "PayPalMessages",
+            targets: ["PayPalMessages"]
+        ),
+        .library(
+            name: "PayPalCheckout",
+            targets: ["PayPalCheckout"]
+        )
+    ],' >> "$temp_package"
+            
+            # Add everything after products section
+            sed -n '/dependencies: \[/,$p' "$temp_no_products" >> "$temp_package"
+            
+            if [ -s "$temp_package" ]; then
+                mv "$temp_package" "$workspace_dir/Package.swift"
+                echo "✅ Updated products in Package.swift"
+            else
+                echo "Warning: Failed to create updated Package.swift"
+            fi
+        else
+            echo "Warning: Could not extract products section from Package-original.swift"
+        fi
+        
+        # Clean up temporary files
+        rm -f "$temp_products" "$temp_package" "$temp_no_products"
     else
         echo "Warning: Package.swift not found in source code"
     fi
